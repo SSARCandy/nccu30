@@ -1,0 +1,25 @@
+{
+  "name": "17web",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "ballchen <kerkerball@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "static/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "angular": "~1.4.8",
+    "jquery": "~2.1.4",
+    "font-awesome": "~4.5.0"
+  }
+}

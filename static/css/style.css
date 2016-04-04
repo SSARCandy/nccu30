@@ -1,0 +1,9 @@
+body{
+	/*margin: 0;*/
+	font-family: 'PingFang TC', sans-serif;
+	background-color: rgba(0, 51, 79, 1);
+	width: 100vw;
+	overflow-x: hidden;
+	font-weight: 300;
+}
+
