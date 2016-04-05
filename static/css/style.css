@@ -5,6 +5,8 @@ body{
 	overflow-x: hidden;
 	font-weight: 300;
 	font-size: 18px;
+	    padding-left: 30px;
+    padding-right: 30px;
 }
 #body{
 	position: relative;
