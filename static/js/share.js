@@ -6,6 +6,4 @@ $(document).ready(function(e) {
 	if ($(window).width() <= 768) {
 		$('.job-p').css('height', $(window).innerHeight());
 	}
-	var container = document.getElementById('body');
-	Ps.initialize(container);
 });
