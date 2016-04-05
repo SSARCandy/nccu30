@@ -9,6 +9,7 @@ const _ = require('lodash')
 const fs = require('fs')
 const ejs = require('ejs')
 const http = require('http')
+const config = require('./config.js');
 
 
 // logger
@@ -20,8 +21,22 @@ app.use(function*(next) {
 });
 
 router.get('/', function*() {
+  this.redirect('/home');
+});
+
+router.get('/:tab', function*() {
   const template = fs.readFileSync(__dirname + '/views/index.html', 'utf-8');
-  const imgs = getFileList(__dirname+'/static/images/gallery/1');
+  const tab = this.params.tab;
+  this.body = ejs.render(template, {
+    filename: __dirname + '/views/index.html',
+    tab: tab,
+    partialUrl: 'partial/' + tab + '.html'
+  });
+})
+
+router.get('/speech/:speech', function*() {
+  const template = fs.readFileSync(__dirname + '/views/partial/speech.html', 'utf-8');
+  const imgs = getFileList(__dirname + config.galleryUrl + this.params.speech);
   this.body = ejs.render(template, {
     img: imgs
   });
@@ -38,7 +53,7 @@ function getFileList(dir) {
   var results = [];
 
   fs.readdirSync(dir).forEach(function(file) {
-    results.push('/images/gallery/1/'+file);
+    results.push('/images/gallery/1/' + file);
   });
   return results;
 }
