@@ -20,6 +20,7 @@
     "bootstrap": "~3.3.6",
     "angular": "~1.4.8",
     "jquery": "~2.1.4",
-    "font-awesome": "~4.5.0"
+    "font-awesome": "~4.5.0",
+    "perfect-scrollbar": "^0.6.10"
   }
 }
