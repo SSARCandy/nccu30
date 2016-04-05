@@ -1,14 +1,14 @@
 'use strict'
 
 require('babel-core/register')
-const koa     = require('koa')
-const app     = koa()
-const router  = require('koa-router')()
+const koa = require('koa')
+const app = koa()
+const router = require('koa-router')()
 const Promise = require('bluebird')
-const _       = require('lodash')
-const fs      = require('fs')
-const ejs     = require('ejs')
-const http    = require('http')
+const _ = require('lodash')
+const fs = require('fs')
+const ejs = require('ejs')
+const http = require('http')
 
 
 // logger
@@ -21,7 +21,10 @@ app.use(function*(next) {
 
 router.get('/', function*() {
   const template = fs.readFileSync(__dirname + '/views/index.html', 'utf-8');
-  this.body = ejs.render(template);
+  const imgs = getFileList(__dirname+'/static/images/gallery/1');
+  this.body = ejs.render(template, {
+    img: imgs
+  });
 });
 
 app.use(router.routes());
@@ -30,3 +33,12 @@ app.use(require('koa-static')(__dirname + '/static'));
 app.listen(process.env.PORT || 3020, function() {
   console.log('Server start on Port: ' + (process.env.PORT || 3020));
 });
+
+function getFileList(dir) {
+  var results = [];
+
+  fs.readdirSync(dir).forEach(function(file) {
+    results.push('/images/gallery/1/'+file);
+  });
+  return results;
+}

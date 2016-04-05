@@ -2,65 +2,76 @@
 <html>
 
 <head>
-	<base href="/">
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <base href="/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-	<!-- open graph -->
-	<meta property="og:title" content="政大三十大講堂" />
-	<meta property="og:image" content="" />
-	<meta property="og:site_name" content="政大三十" />
-	<meta property="og:description" content="hahahahahhahahaha" />
-	<meta property="fb:app_id" content="" />
+  <!-- open graph -->
+  <meta property="og:title" content="政大三十大講堂" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="政大三十" />
+  <meta property="og:description" content="hahahahahhahahaha" />
+  <meta property="fb:app_id" content="" />
 
-	<title>政大三十</title>
-	<link rel="shortcut icon" type="images/ico" href="/images/logo/favicon.ico"/>
+  <title>政大三十大講堂</title>
+  <link rel="shortcut icon" type="images/ico" href="/images/logo/favicon.ico" />
 
-	<link rel="stylesheet" href="/components/bootstrap/dist/css/bootstrap.css">
-	<link rel="stylesheet" href="/components/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" href="/components/perfect-scrollbar/css/perfect-scrollbar.css" />
+  <link rel="stylesheet" href="/components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="/components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/components/perfect-scrollbar/css/perfect-scrollbar.css" />
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/components/justifiedGallery/dist/css/justifiedGallery.css" />
+  <link rel="stylesheet" href="/components/swipebox/src/css/swipebox.css">
 
-	<script src="/components/jquery/dist/jquery.min.js"></script>
-	<script src="/components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="/components/perfect-scrollbar/js/perfect-scrollbar.js"></script>
-	<script src="/js/share.js"></script>
+  <script src="/components/jquery/dist/jquery.min.js"></script>
+  <script src="/components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/components/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+  <script src="/components/justifiedGallery/dist/js/jquery.justifiedGallery.js"></script>
+  <script src="/components/swipebox/src/js/jquery.swipebox.js"></script>
+  <script src="/js/share.js"></script>
 </head>
 
 <body>
-	<div id="body">
-		<nav class="navbar navbar-default navbar-static-top">
-			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#"><img src="/images/logo/logo.png" style="height: 50px;"></a>
-				</div>
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="/images/logo/logo.png" style="height: 50px;"></a>
+      </div>
 
-				<div class="collapse navbar-collapse" id="navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right" style="padding-right: 50px;">
-						<li class="active header-button"><a href="#">關於我們</a></li>
-						<li><a href="#">歷屆回顧</a></li>
-						<li><a href="#">相關議題</a></li>
-						<li><a href="#">搶先報名</a></li>
-						<li><a href="#">聯絡我們</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right" style="padding-right: 50px;">
+          <li class="active header-button"><a href="#">關於我們</a></li>
+          <li><a href="#">歷屆回顧</a></li>
+          <li><a href="#">相關議題</a></li>
+          <li><a href="#">搶先報名</a></li>
+          <li><a href="#">聯絡我們</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-		<div>
-			<img src="http://dummyimage.com/1600x500/000/fff">
-		</div>	
-		<div style="height:200px;background-color:#0f0;">
-			講者資訊
-		</div>
-	</div>
+  <div id="body">
+    <div>
+      <img src="http://dummyimage.com/1200x500/000/fff">
+    </div>
+    <div style="height:200px;background-color:#0f0;">
+      講者資訊
+    </div>
+    <div id="gallery">
+      <% img.forEach(function(i) {%>
+      <a href="<%=i%>"> <img src="<%=i%>"> </a>
+      <% }) %>
+    </div>
+
+
+  </div>
 </body>
 
 </html>

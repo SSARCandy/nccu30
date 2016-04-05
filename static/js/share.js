@@ -3,7 +3,20 @@ function share() {
 }
 
 $(document).ready(function(e) {
-	if ($(window).width() <= 768) {
-		$('.job-p').css('height', $(window).innerHeight());
-	}
+	$(".nav li").on("click", function() {
+		$(".nav li").removeClass("active");
+		$(this).addClass("active");
+	});
+
+
+
+	$('#gallery').justifiedGallery({
+		lastRow: 'nojustify',
+		rowHeight: 100,
+		rel: 'gallery2',
+		margins: 1
+	}).on('jg.complete', function() {
+		$('#gallery a').swipebox();
+	});
+
 });

@@ -1,22 +1,25 @@
-body{
-	/*margin: 0;*/
-	font-family: 'PingFang TC', sans-serif, 微軟正黑體;
-	width: 100vw;
-	overflow-x: hidden;
-	font-weight: 300;
-	font-size: 18px;
-	    padding-left: 30px;
-    padding-right: 30px;
-}
-#body{
-	position: relative;
-    height: 100%; 
+body {
+    /*margin: 0;*/
+    font-family: 'PingFang TC', sans-serif, 微軟正黑體;
+    width: 100vw;
+    overflow-x: hidden;
+    font-weight: 300;
+    font-size: 18px;
 }
 
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+#body {
+    position: relative;
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
     color: #006aa6;
     border-bottom: 3px solid black;
-	background-color: initial;
+    background-color: initial;
 }
 
 .navbar-brand {

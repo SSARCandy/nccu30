@@ -17,10 +17,13 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.3.6",
     "angular": "~1.4.8",
-    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.6",
     "font-awesome": "~4.5.0",
-    "perfect-scrollbar": "^0.6.10"
+    "jquery": "~2.1.4",
+    "justifiedGallery": "justified-gallery#~3.6.1",
+    "perfect-scrollbar": "^0.6.10",
+    "photoswipe": "~4.1.1",
+    "swipebox": "~1.4.4"
   }
 }
