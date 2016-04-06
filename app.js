@@ -35,10 +35,13 @@ router.get('/:tab', function*() {
 })
 
 router.get('/speech/:speech', function*() {
-  const template = fs.readFileSync(__dirname + '/views/partial/speech.html', 'utf-8');
+  const template = fs.readFileSync(__dirname + '/views/index.html', 'utf-8');
   const imgs = getFileList(__dirname + config.galleryUrl + this.params.speech);
   this.body = ejs.render(template, {
-    img: imgs
+    img: imgs,
+    filename: __dirname + '/views/index.html',
+    tab: 'speech',
+    partialUrl: 'partial/speech.html'
   });
 });
 
