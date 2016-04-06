@@ -8,8 +8,7 @@ $(document).ready(function(e) {
 		$(this).addClass("active");
 	});
 
-
-
+    $(".button-collapse").sideNav();
 	$('#gallery').justifiedGallery({
 		lastRow: 'nojustify',
 		rowHeight: 100,

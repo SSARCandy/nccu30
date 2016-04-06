@@ -13,7 +13,6 @@
   <meta property="og:description" content="「政大三十大講堂」的活動舉行，是由校友籌邀講座人選，學生會負責籌組講座進行，校方行政支援，校內教授提點指導，這種分工合作、帶領後進的方式，創立了一種新的校園傳承接力模式。" />
   <meta property="fb:app_id" content="256435891359679" />
   <title>政大三十大講堂</title>
-
   <link rel="shortcut icon" type="images/ico" href="/images/logo/favicon.ico" />
   <link rel="stylesheet" href="/components/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="/components/perfect-scrollbar/css/perfect-scrollbar.css" />
@@ -21,7 +20,6 @@
   <link rel="stylesheet" href="/components/justifiedGallery/dist/css/justifiedGallery.css" />
   <link rel="stylesheet" href="/components/swipebox/src/css/swipebox.css">
   <link rel="stylesheet" href="/components/Materialize/dist/css/materialize.min.css" />
-
   <script src="/components/jquery/dist/jquery.min.js"></script>
   <script src="/components/Materialize/dist/js/materialize.min.js"></script>
   <script src="/components/perfect-scrollbar/js/perfect-scrollbar.js"></script>
@@ -31,21 +29,38 @@
 </head>
 
 <body>
-  <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo"><img src="/images/logo/logo.png" style="height: 50px;"></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
+  <nav style="height: 64px;">
+    <div class="nav-wrapper grey lighten-4">
+      <a href="#!" class="brand-logo"><img src="/images/logo/logo.png" style="height: 65px; padding: 8px 0;"></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse">
+        <i class="fa fa-bars black-text" style="line-height: 64px;"></i>
+      </a>
+      <ul class="right hide-on-med-and-down">
         <li class="<% if (tab === 'about') {%> active <%}%>">
-          <a href="/about">關於我們</a>
+          <a class="nav-span black-text" href="/about">關於我們</a>
         </li>
         <li class="<% if (tab.indexOf('speech') !== -1) {%> active <%}%>">
-          <a href="/speechlist">歷屆回顧</a>
+          <a class="nav-span black-text" href="/speechlist">歷屆回顧</a>
         </li>
         <li class="<% if (tab === 'signup') {%> active <%}%>">
-          <a href="/signup">搶先報名</a>
+          <a class="nav-span black-text" href="/signup">搶先報名</a>
         </li>
         <li class="<% if (tab === 'contact') {%> active <%}%>">
-          <a href="/contact">聯絡我們</a>
+          <a class="nav-span black-text" href="/contact">聯絡我們</a>
+        </li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li class="<% if (tab === 'about') {%> active <%}%>">
+          <a class="nav-span black-text" href="/about">關於我們</a>
+        </li>
+        <li class="<% if (tab.indexOf('speech') !== -1) {%> active <%}%>">
+          <a class="nav-span black-text" href="/speechlist">歷屆回顧</a>
+        </li>
+        <li class="<% if (tab === 'signup') {%> active <%}%>">
+          <a class="nav-span black-text" href="/signup">搶先報名</a>
+        </li>
+        <li class="<% if (tab === 'contact') {%> active <%}%>">
+          <a class="nav-span black-text" href="/contact">聯絡我們</a>
         </li>
       </ul>
     </div>
