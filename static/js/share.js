@@ -7,8 +7,13 @@ $(document).ready(function(e) {
 		$(".nav li").removeClass("active");
 		$(this).addClass("active");
 	});
-
+	// mobile hamburger bar
     $(".button-collapse").sideNav();
+    // slider initialize
+    $('.slider').slider({full_width: true, interval:8000});
+    // parallax
+    $('.parallax').parallax();
+
 	$('#gallery').justifiedGallery({
 		lastRow: 'nojustify',
 		rowHeight: 100,
