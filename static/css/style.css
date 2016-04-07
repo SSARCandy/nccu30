@@ -30,6 +30,10 @@ body {
 	line-height: 20px;
 }
 
+nav ul li {
+	margin: 0 1px;
+}
+
 li .nav-span {
 	font-size: 18px;
 }
@@ -39,7 +43,6 @@ nav .nav-wrapper {
 }
 
 .hvr-underline-reveal {
-	/* display: inline-block; */
 	vertical-align: middle;
 	-webkit-transform: translateZ(0);
 	transform: translateZ(0);

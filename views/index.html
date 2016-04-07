@@ -16,10 +16,10 @@
   <link rel="shortcut icon" type="images/ico" href="/images/logo/favicon.ico" />
   <link rel="stylesheet" href="/components/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="/components/perfect-scrollbar/css/perfect-scrollbar.css" />
-  <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/components/justifiedGallery/dist/css/justifiedGallery.css" />
   <link rel="stylesheet" href="/components/swipebox/src/css/swipebox.css">
   <link rel="stylesheet" href="/components/Materialize/dist/css/materialize.min.css" />
+  <link rel="stylesheet" href="/css/style.css">
   <script src="/components/jquery/dist/jquery.min.js"></script>
   <script src="/components/Materialize/dist/js/materialize.min.js"></script>
   <script src="/components/perfect-scrollbar/js/perfect-scrollbar.js"></script>
@@ -50,16 +50,16 @@
         </li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
-        <li class="hvr-underline-reveal <% if (tab === 'about') {%> active <%}%>">
+        <li class="<% if (tab === 'about') {%> active <%}%>">
           <a class="nav-span black-text" href="/about">關於我們</a>
         </li>
-        <li class="hvr-underline-reveal <% if (tab.indexOf('speech') !== -1) {%> active <%}%>">
+        <li class="<% if (tab.indexOf('speech') !== -1) {%> active <%}%>">
           <a class="nav-span black-text" href="/speechlist">歷屆回顧</a>
         </li>
-        <li class="hvr-underline-reveal <% if (tab === 'signup') {%> active <%}%>">
+        <li class="<% if (tab === 'signup') {%> active <%}%>">
           <a class="nav-span black-text" href="/signup">搶先報名</a>
         </li>
-        <li class="hvr-underline-reveal <% if (tab === 'contact') {%> active <%}%>">
+        <li class="<% if (tab === 'contact') {%> active <%}%>">
           <a class="nav-span black-text" href="/contact">聯絡我們</a>
         </li>
       </ul>
