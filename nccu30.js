@@ -9,6 +9,7 @@ const _ = require('lodash')
 const fs = require('fs')
 const ejs = require('ejs')
 const http = require('http')
+const speechlist = require('./data/speechlist.js');
 const config = require('./config.js');
 
 
@@ -27,9 +28,11 @@ router.get('/', function*() {
 router.get('/:tab', function*() {
   const template = fs.readFileSync(__dirname + '/views/index.html', 'utf-8');
   const tab = this.params.tab;
+
   this.body = ejs.render(template, {
     filename: __dirname + '/views/index.html',
     tab: tab,
+    speechlist: speechlist,
     partialUrl: 'partial/' + tab + '.html'
   });
 })
