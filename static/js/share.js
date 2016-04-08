@@ -8,11 +8,11 @@ $(document).ready(function(e) {
 		$(this).addClass("active");
 	});
 	// mobile hamburger bar
-    $(".button-collapse").sideNav();
-    // slider initialize
-    $('.slider').slider({full_width: true, interval:8000});
-    // parallax
-    $('.parallax').parallax();
+	$(".button-collapse").sideNav();
+	// slider initialize
+	$('.slider').slider({ full_width: true, interval: 8000, height: $(window).height() - 110 });
+	// parallax
+	$('.parallax').parallax();
 
 	$('#gallery').justifiedGallery({
 		lastRow: 'nojustify',
