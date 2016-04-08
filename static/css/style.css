@@ -1,3 +1,4 @@
+html,
 body {
 	/*margin: 0;*/
 	font-family: 'PingFang TC', sans-serif, 微軟正黑體;
@@ -10,8 +11,8 @@ body {
 #body {
 	position: relative;
 	height: 100%;
-	padding: 30px;
-	padding-bottom: 0;
+	/* padding: 30px;
+	padding-bottom: 0; */
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -30,16 +31,18 @@ body {
 	line-height: 20px;
 }
 
-nav ul li {
-	margin: 0 1px;
-}
-
 li .nav-span {
 	font-size: 18px;
 }
 
 nav .nav-wrapper {
 	padding: 0 30px;
+}
+
+.slider .slides li .caption {
+	top: 10%;
+	left: 10%;
+	width: 80%;
 }
 
 .hvr-underline-reveal {
@@ -80,4 +83,50 @@ nav .nav-wrapper {
 	-webkit-transform: translateY(0);
 	transform: translateY(0);
 	border-width: 4px;
+}
+
+@media only screen and (min-width: 993px) {
+	.container {
+		width: 85%;
+	}
+}
+
+li {
+	display: ;
+}
+
+@media only screen and (min-width: 301px) {
+	.slider .slides li .caption {
+		top: 5%;
+		left: 5%;
+		width: 90%;
+	}
+	.home-banner {
+		margin-top: 30px;
+	}
+	.home-banner .home-btn {
+		margin: 15px 0;
+	}
+	.btn.home {
+		margin: 5px 0;
+	}
+}
+
+@media only screen and (min-width: 601px) {
+	.slider .slides li .caption {
+		top: 10%;
+		left: 10%;
+		width: 80%;
+	}
+	.home-banner {
+		padding-top: 180px;
+	}
+	.home-banner .home-btn {
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+	}
+	.btn.home {
+		margin: 5px 0;
+	}
 }
