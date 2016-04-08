@@ -133,3 +133,12 @@ li {
 		margin: 5px 0;
 	}
 }
+
+nav ul li.active {
+	background-color: initial;
+}
+
+nav ul a:hover {
+	color: #006aa6 !important;
+	background-color: initial;
+}
