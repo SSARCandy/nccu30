@@ -1,0 +1,36 @@
+module.exports = [{
+  name: '從姚明的高度看世界',
+  speecher: '姚明',
+  cover: 'http://dummyimage.com/1200x500/bac/fff',
+  url: '/speech/01'
+}, {
+  name: '為土地種一個希望',
+  speecher: 'xxxxx',
+  cover: 'http://dummyimage.com/1200x500/abc/fff',
+  url: '/speech/02'
+}, {
+  name: '貨幣戰爭',
+  speecher: 'xxx',
+  cover: 'http://dummyimage.com/1200x500/bca/fff',
+  url: '/speech/03'
+}, {
+  name: '我是歌手的心路歷程',
+  speecher: 'xxx',
+  cover: 'http://dummyimage.com/1200x500/7ca/fff',
+  url: '/speech/04'
+}, {
+  name: '挑戰，引領時代',
+  speecher: 'xxx',
+  cover: 'http://dummyimage.com/1200x500/b8a/fff',
+  url: '/speech/05'
+}, {
+  name: '改變，從台北開始',
+  speecher: '柯文哲',
+  cover: 'http://dummyimage.com/1200x500/bc9/fff',
+  url: '/speech/06'
+}, {
+  name: '李開復談世界觀',
+  speecher: '李開復',
+  cover: 'http://dummyimage.com/1200x500/bac/fff',
+  url: '/speech/07'
+}];
