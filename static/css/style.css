@@ -45,6 +45,10 @@ nav .nav-wrapper {
 	width: 80%;
 }
 
+.row {
+	margin-bottom: 0;
+}
+
 .hvr-underline-reveal {
 	vertical-align: middle;
 	-webkit-transform: translateZ(0);
@@ -117,7 +121,7 @@ li {
 		width: 80%;
 	}
 	.home-banner {
-		padding-top: 15%;
+		padding-top: 17%;
 	}
 	.home-banner .home-btn {
 		margin: 0;
