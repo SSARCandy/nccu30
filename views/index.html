@@ -31,9 +31,9 @@
 <body>
   <nav style="height: 64px;">
     <div class="nav-wrapper grey lighten-4">
-      <a href="#!" class="brand-logo"><img src="/images/logo/logo.png" style="height: 65px; padding: 8px 0;"></a>
+      <a href="#!" class="brand-logo"><img src="/images/logo/logo.png" style="height: 62px; padding: 10px 0;"></a>
       <a href="#" data-activates="mobile-demo" class="button-collapse">
-        <i class="fa fa-bars black-text" style="line-height: 64px; font-size: 2rem;"></i>
+        <i class="fa fa-bars black-text" style="line-height: 64px; font-size: 1.3rem;"></i>
       </a>
       <ul class="right hide-on-med-and-down">
         <li class="hvr-underline-reveal <% if (tab === 'about') {%> active <%}%>">
@@ -50,6 +50,9 @@
         </li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
+        <li>
+          <a class="nav-span black-text" href="#!">回到首頁</a>
+        </li>
         <li class="<% if (tab === 'about') {%> active <%}%>">
           <a class="nav-span black-text" href="/about">關於我們</a>
         </li>
@@ -62,6 +65,7 @@
         <li class="<% if (tab === 'contact') {%> active <%}%>">
           <a class="nav-span black-text" href="/contact">聯絡我們</a>
         </li>
+        <hr>
       </ul>
     </div>
   </nav>
