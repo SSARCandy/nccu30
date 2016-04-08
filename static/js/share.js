@@ -10,8 +10,11 @@ $(document).ready(function(e) {
 	// mobile hamburger bar
 	$(".button-collapse").sideNav();
 	// slider initialize
-	$('.slider').slider({ full_width: true, interval: 8000, height: $(window).height() - 110 });
-	// parallax
+	if ($(window).height() < 700) {
+		$('.slider').slider({ full_width: true, interval: 8000, height: $(window).height() - 110 });
+	} else {
+		$('.slider').slider({ full_width: true, interval: 8000, height: 550 });
+	}
 	$('.parallax').parallax();
 
 	$('#gallery').justifiedGallery({
