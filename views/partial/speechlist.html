@@ -1,8 +1,8 @@
 <div>
   <% speechlist.forEach(function(s) {  %>
     <a href="<%=s.url%>">
-      <div class="parallax-container" style="height:300px; margin-bottom:10px;">
-        <div class="parallax"><img src="<%=s.cover%>"></div>
+      <div class="parallax-container" style="height:250px; margin-bottom:10px;">
+        <div class="parallax"><img class="responsive-img" src="<%=s.cover%>"></div>
         <span><%=s.name%></span>
         <span><%=s.speecher%></span>
       </div>
