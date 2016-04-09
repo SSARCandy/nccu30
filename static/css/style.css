@@ -45,6 +45,10 @@ nav .nav-wrapper {
 	width: 80%;
 }
 
+.row {
+	margin-bottom: 0;
+}
+
 .hvr-underline-reveal {
 	vertical-align: middle;
 	-webkit-transform: translateZ(0);
@@ -102,14 +106,10 @@ li {
 		width: 90%;
 	}
 	.home-banner {
-		margin-top: 30px;
-	}
-	.home-banner .home-btn {
-		margin: 15px 0;
-		padding-top: 10%;
+		margin-top: 15px;
 	}
 	.btn.home {
-		margin: 5px 0;
+		margin: 5px 10px;
 		padding: 0 10px;
 	}
 }
@@ -121,7 +121,7 @@ li {
 		width: 80%;
 	}
 	.home-banner {
-		padding-top: 15%;
+		padding-top: 17%;
 	}
 	.home-banner .home-btn {
 		margin: 0;
@@ -132,4 +132,13 @@ li {
 	.btn.home {
 		margin: 5px 0;
 	}
+}
+
+nav ul li.active {
+	background-color: initial;
+}
+
+nav ul a:hover {
+	color: #006aa6 !important;
+	background-color: initial;
 }
