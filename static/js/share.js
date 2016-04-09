@@ -16,6 +16,8 @@ $(document).ready(function(e) {
 		$('.slider').slider({ full_width: true, interval: 8000, height: 550 });
 	}
 	$('.parallax').parallax();
+	$('.carousel').carousel({ dist: -10, padding: -20, shift: 0 });
+	$('.materialboxed').materialbox();
 
 	$('#gallery').justifiedGallery({
 		lastRow: 'nojustify',
