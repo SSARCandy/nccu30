@@ -2,89 +2,91 @@
 <html>
 
 <head>
-	<base href="/">
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<!-- open graph -->
-	<meta property="og:title" content="政大三十大講堂" />
-	<meta property="og:image" content="images/logo/logo.png" />
-	<meta property="og:site_name" content="政大三十" />
-	<meta property="og:description" content="「政大三十大講堂」的活動舉行，是由校友籌邀講座人選，學生會負責籌組講座進行，校方行政支援，校內教授提點指導，這種分工合作、帶領後進的方式，創立了一種新的校園傳承接力模式。"
-	/>
-	<meta property="fb:app_id" content="256435891359679" />
-	<title>政大三十大講堂</title>
-	<link rel="shortcut icon" type="images/ico" href="/images/logo/favicon.ico" />
-	<link rel="stylesheet" href="/components/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/components/perfect-scrollbar/css/perfect-scrollbar.css" />
-	<link rel="stylesheet" href="/components/justifiedGallery/dist/css/justifiedGallery.css" />
-	<link rel="stylesheet" href="/components/swipebox/src/css/swipebox.css">
-	<link rel="stylesheet" href="/components/Materialize/dist/css/materialize.min.css" />
-	<link rel="stylesheet" href="/css/style.css">
-	<script src="/components/jquery/dist/jquery.min.js"></script>
-	<script src="/components/Materialize/dist/js/materialize.min.js"></script>
-	<script src="/components/perfect-scrollbar/js/perfect-scrollbar.js"></script>
-	<script src="/components/justifiedGallery/dist/js/jquery.justifiedGallery.js"></script>
-	<script src="/components/swipebox/src/js/jquery.swipebox.js"></script>
-	<script src="/js/share.js"></script>
+  <base href="/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  
+  <!-- open graph -->
+  <meta property="og:title" content="政大三十大講堂" />
+  <meta property="og:image" content="images/logo/logo.png" />
+  <meta property="og:site_name" content="政大三十" />
+  <meta property="og:description" content="「政大三十大講堂」的活動舉行，是由校友籌邀講座人選，學生會負責籌組講座進行，校方行政支援，校內教授提點指導，這種分工合作、帶領後進的方式，創立了一種新的校園傳承接力模式。"
+  />
+  <meta property="fb:app_id" content="256435891359679" />
+  <title>政大三十大講堂</title>
+  <link rel="shortcut icon" type="images/ico" href="/images/logo/favicon.ico" />
+  <link rel="stylesheet" href="/components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/components/perfect-scrollbar/css/perfect-scrollbar.css" />
+  <link rel="stylesheet" href="/components/justifiedGallery/dist/css/justifiedGallery.css" />
+  <link rel="stylesheet" href="/components/swipebox/src/css/swipebox.css">
+  <link rel="stylesheet" href="/components/Materialize/dist/css/materialize.min.css" />
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/components/jquery/dist/jquery.min.js"></script>
+  <script src="/components/Materialize/dist/js/materialize.min.js"></script>
+  <script src="/components/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+  <script src="/components/justifiedGallery/dist/js/jquery.justifiedGallery.js"></script>
+  <script src="/components/swipebox/src/js/jquery.swipebox.js"></script>
+  <script src="/js/share.js"></script>
 </head>
 
 <body>
-	<nav style="height: 64px;">
-		<div class="nav-wrapper grey lighten-4">
-			<a href="#!" class="brand-logo"><img src="/images/logo/logo.png" style="height: 62px; padding: 10px 0;"></a>
-			<a href="#" data-activates="mobile-demo" class="button-collapse">
-				<i class="fa fa-bars black-text" style="line-height: 64px; font-size: 1.3rem;"></i>
-			</a>
-			<ul class="right hide-on-med-and-down">
-				<li class="hvr-underline-reveal <% if (tab === 'about') {%> active <%}%>">
-					<a class="nav-span black-text" href="/about">關於我們</a>
-				</li>
-				<li class="hvr-underline-reveal <% if (tab.indexOf('speech') !== -1) {%> active <%}%>">
-					<a class="nav-span black-text" href="/speechlist">歷屆回顧</a>
-				</li>
-				<li class="hvr-underline-reveal <% if (tab === 'signup') {%> active <%}%>">
-					<a class="nav-span black-text" href="/signup">搶先報名</a>
-				</li>
-				<li class="hvr-underline-reveal <% if (tab === 'contact') {%> active <%}%>">
-					<a class="nav-span black-text" href="/contact">聯絡我們</a>
-				</li>
-			</ul>
-			<ul class="side-nav" id="mobile-demo">
-				<li>
-					<a class="nav-span black-text" href="#!">回到首頁</a>
-				</li>
-				<li class="<% if (tab === 'about') {%> active <%}%>">
-					<a class="nav-span black-text" href="/about">關於我們</a>
-				</li>
-				<li class="<% if (tab.indexOf('speech') !== -1) {%> active <%}%>">
-					<a class="nav-span black-text" href="/speechlist">歷屆回顧</a>
-				</li>
-				<li class="<% if (tab === 'signup') {%> active <%}%>">
-					<a class="nav-span black-text" href="/signup">搶先報名</a>
-				</li>
-				<li class="<% if (tab === 'contact') {%> active <%}%>">
-					<a class="nav-span black-text" href="/contact">聯絡我們</a>
-				</li>
-				<hr>
-			</ul>
-		</div>
-	</nav>
-	<div id="body">
-		<%- include(partialUrl) %>
-	</div>
-	<footer class="page-footer" style="background-color: #757575; padding-top:0px;">
+  <div class="navbar-fixed">
+    <nav style="height: 64px;">
+      <div class="nav-wrapper grey lighten-4">
+        <a href="#!" class="brand-logo"><img src="/images/logo/logo.png" style="height: 62px; padding: 10px 0;"></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse">
+          <i class="fa fa-bars black-text" style="line-height: 64px; font-size: 1.3rem;"></i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li class="hvr-underline-reveal <% if (tab === 'about') {%> active <%}%>">
+            <a class="nav-span black-text" href="/about">關於我們</a>
+          </li>
+          <li class="hvr-underline-reveal <% if (tab.indexOf('speech') !== -1) {%> active <%}%>">
+            <a class="nav-span black-text" href="/speechlist">歷屆回顧</a>
+          </li>
+          <li class="hvr-underline-reveal <% if (tab === 'signup') {%> active <%}%>">
+            <a class="nav-span black-text" href="/signup">搶先報名</a>
+          </li>
+          <li class="hvr-underline-reveal <% if (tab === 'contact') {%> active <%}%>">
+            <a class="nav-span black-text" href="/contact">聯絡我們</a>
+          </li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li>
+            <a class="nav-span black-text" href="#!">回到首頁</a>
+          </li>
+          <li class="<% if (tab === 'about') {%> active <%}%>">
+            <a class="nav-span black-text" href="/about">關於我們</a>
+          </li>
+          <li class="<% if (tab.indexOf('speech') !== -1) {%> active <%}%>">
+            <a class="nav-span black-text" href="/speechlist">歷屆回顧</a>
+          </li>
+          <li class="<% if (tab === 'signup') {%> active <%}%>">
+            <a class="nav-span black-text" href="/signup">搶先報名</a>
+          </li>
+          <li class="<% if (tab === 'contact') {%> active <%}%>">
+            <a class="nav-span black-text" href="/contact">聯絡我們</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
-		<div class="footer-copyright" style="font-size: 14px;">
-			<div class="row container">
-				<div>
-					© Copyright NCCUSA 2016, All Rights Reserved. Maintained by <a href="fb.me/ssarcandy" style="color:rgba(255,255,255,0.8)">ssarcandy</a>, <a href="#" style="color:rgba(255,255,255,0.8)">LonSilent</a>
-					<a class="grey-text text-lighten-3 right" href="https://www.facebook.com/nccu30" style="font-size: 16px;"><i class="fa fa-facebook-square"></i></a>
-				</div>
-			</div>
-		</div>
-	</footer>
+  <div id="body">
+    <%- include(partialUrl) %>
+  </div>
+  <footer class="page-footer" style="background-color: #757575; padding-top:0px;">
+    <div class="footer-copyright" style="font-size: 14px;">
+      <div class="row container">
+        <div>
+          © Copyright NCCUSA 2016, All Rights Reserved. Maintained by <a href="fb.me/ssarcandy" style="color:rgba(255,255,255,0.8)">ssarcandy</a>,
+          <a href="#" style="color:rgba(255,255,255,0.8)">LonSilent</a>
+          <a class="grey-text text-lighten-3 right" href="https://www.facebook.com/nccu30" style="font-size: 16px;"><i class="fa fa-facebook-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
-
 </html>

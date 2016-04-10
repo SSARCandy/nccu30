@@ -1,3 +1,4 @@
 *.swp
 static/components/
 node_modules/
+.vscode/
