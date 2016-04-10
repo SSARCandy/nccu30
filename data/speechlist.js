@@ -1,36 +1,36 @@
 module.exports = [{
   name: '從姚明的高度看世界',
-  speecher: '姚明',
-  cover: 'http://dummyimage.com/1200x500/bac/fff',
+  speecher: '姚明X別蓮蒂',
+  cover: 'images/gallery/1/cover.jpg',
   url: '/speech/1'
 }, {
   name: '為土地種一個希望',
-  speecher: 'xxxxx',
-  cover: 'http://dummyimage.com/1200x500/abc/fff',
+  speecher: '嚴長壽X司徒達賢X沈方正',
+  cover: 'images/gallery/2/cover.jpg',
   url: '/speech/2'
 }, {
   name: '貨幣戰爭',
-  speecher: 'xxx',
-  cover: 'http://dummyimage.com/1200x500/bca/fff',
+  speecher: '宋鴻兵X謝金河',
+  cover: 'images/gallery/3/cover.jpg',
   url: '/speech/3'
 }, {
   name: '我是歌手的心路歷程',
-  speecher: 'xxx',
-  cover: 'http://dummyimage.com/1200x500/7ca/fff',
+  speecher: '彭佳慧X別蓮蒂',
+  cover: 'images/gallery/4/cover.jpg',
   url: '/speech/4'
 }, {
   name: '挑戰，引領時代',
-  speecher: 'xxx',
-  cover: 'http://dummyimage.com/1200x500/b8a/fff',
+  speecher: '尹衍樑X謝金河',
+  cover: 'images/gallery/5/cover.jpg',
   url: '/speech/5'
 }, {
   name: '改變，從台北開始',
-  speecher: '柯文哲',
-  cover: 'http://dummyimage.com/1200x500/bc9/fff',
+  speecher: '柯文哲X謝金河',
+  cover: 'images/gallery/6/cover.jpg',
   url: '/speech/6'
 }, {
   name: '李開復談世界觀',
-  speecher: '李開復',
-  cover: 'http://dummyimage.com/1200x500/bac/fff',
+  speecher: '李開復X苑守慈',
+  cover: 'images/gallery/7/cover.jpg',
   url: '/speech/7'
 }];
