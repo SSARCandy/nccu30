@@ -1,11 +1,20 @@
 <div>
   <% speechlist.forEach(function(s) {  %>
     <a href="<%=s.url%>">
-      <div class="parallax-container" style="height:250px; margin-bottom:10px;">
+      <div class="parallax-container speech-list-img">
         <div class="parallax"><img class="responsive-img" src="<%=s.cover%>"></div>
-        <span><%=s.name%></span>
-        <span><%=s.speecher%></span>
+        <!-- <span><%=s.name%></span>
+        <span><%=s.speecher%></span> -->
       </div>
     </a>
+    <div class="section white">
+      <div class="row container">
+        <h5 class="header">
+          <span><%=s.name%></span>
+          <span><%=s.speecher%></span>
+        </h5>
+        <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+      </div>
+    </div>
     <% }) %>
 </div>

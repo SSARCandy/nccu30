@@ -112,6 +112,9 @@ li {
 		margin: 5px 10px;
 		padding: 0 10px;
 	}
+	.speech-list-img {
+		height: 200px;
+	}
 }
 
 @media only screen and (min-width: 601px) {
@@ -132,6 +135,9 @@ li {
 	.btn.home {
 		margin: 5px 0;
 	}
+	.speech-list-img {
+		height: 400px;
+	}
 }
 
 nav ul li.active {
@@ -142,4 +148,3 @@ nav ul a:hover {
 	color: #006aa6 !important;
 	background-color: initial;
 }
-
