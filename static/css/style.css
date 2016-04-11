@@ -114,6 +114,14 @@ li {
 	}
 	.speech-list-img {
 		height: 200px;
+		margin-bottom: 5px;
+	}
+	.speech-list-text {
+		height: 100%;
+		flex-direction: column;
+		width: 100%;
+		text-align: center;
+		padding: 0;
 	}
 }
 
@@ -137,6 +145,10 @@ li {
 	}
 	.speech-list-img {
 		height: 400px;
+	}
+	.speech-list-text {
+		width: 35%;
+		padding: 120px 0;
 	}
 }
 
