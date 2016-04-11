@@ -113,8 +113,8 @@ li {
 		padding: 0 10px;
 	}
 	.speech-list-img {
-		height: 200px;
-		margin-bottom: 5px;
+		height: 265px;
+		margin-bottom: 6px;
 	}
 	.speech-list-text {
 		height: 100%;
@@ -144,11 +144,12 @@ li {
 		margin: 5px 0;
 	}
 	.speech-list-img {
-		height: 400px;
+		height: 450px;
+		margin-bottom: 10px;
 	}
 	.speech-list-text {
 		width: 35%;
-		padding: 120px 0;
+		padding: 175px 0;
 	}
 }
 
