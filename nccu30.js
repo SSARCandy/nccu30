@@ -40,10 +40,12 @@ router.get('/:tab', function*() {
 router.get('/speech/:speech', function*() {
   const template = fs.readFileSync(__dirname + '/views/index.html', 'utf-8');
   const imgs = getFileList(__dirname + config.galleryUrl + this.params.speech);
-  console.log(imgs);
+  const speechDetails = speechlist[parseInt(this.params.speech, 10) - 1];
+
   this.body = ejs.render(template, {
     img: imgs,
     filename: __dirname + '/views/index.html',
+    speechDetails: speechDetails,
     tab: 'speech',
     partialUrl: 'partial/speech.html'
   });
