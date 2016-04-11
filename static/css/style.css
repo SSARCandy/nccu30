@@ -8,6 +8,16 @@ body {
 	font-size: 18px;
 }
 
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
 #body {
 	position: relative;
 	height: 100%;
@@ -121,7 +131,9 @@ li {
 		flex-direction: column;
 		width: 100%;
 		text-align: center;
-		padding: 20px 0;
+		padding: 10px 0 0 20px;
+		align-items: flex-start;
+		-webkit-align-items: : flex-start;
 	}
 }
 
@@ -150,6 +162,8 @@ li {
 	.speech-list-text {
 		width: 25%;
 		padding: 175px 0;
+		align-items: center;
+		-webkit-align-items: : center;
 	}
 }
 
