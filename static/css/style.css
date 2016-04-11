@@ -121,7 +121,7 @@ li {
 		flex-direction: column;
 		width: 100%;
 		text-align: center;
-		padding: 0;
+		padding: 20px 0;
 	}
 }
 
@@ -152,6 +152,12 @@ li {
 	}
 }
 
+.speech-list-text h5,
+h6 {
+	color: #fff;
+	text-shadow: 2px 2px 4px #000000;
+}
+
 nav ul li.active {
 	background-color: initial;
 }
@@ -159,4 +165,9 @@ nav ul li.active {
 nav ul a:hover {
 	color: #006aa6 !important;
 	background-color: initial;
+}
+
+.dark-filter {
+	filter: brightness(90%);
+	-webkit-filter: brightness(90%);
 }

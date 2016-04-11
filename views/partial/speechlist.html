@@ -2,14 +2,14 @@
   <% speechlist.forEach(function(s) {  %>
     <a href="<%=s.url%>">
       <div class="parallax-container speech-list-img">
-        <div class="parallax"><img class="responsive-img" src="<%=s.cover%>"></div>
+        <div class="parallax"><img class="responsive-img dark-filter" src="<%=s.cover%>"></div>
         <!--  <span><%=s.name%></span>
         <span><%=s.speecher%></span> -->
         <div class="valign-wrapper speech-list-text">
-          <h4 class="valign" style="color:#fff;"><%=s.name%></h4>
-          <h5 class="valign" style="color:#fff;">
+          <h5 class="valign"><%=s.name%></h5>
+          <h6 class="valign">
             <%=s.speecher%>
-          </h5>
+          </h6>
         </div>
       </div>
     </a>
