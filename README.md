@@ -8,9 +8,10 @@
 ### How to run
 
 ```
+~$ npm install -g nodemon
 ~$ npm install
 ~$ bower install
-~$ node app.js
+~$ npm run dev
 ```
 
 app will listen at `localhost:3020`

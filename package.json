@@ -4,6 +4,8 @@
   "description": "",
   "main": "nccu30.js",
   "scripts": {
+    "start": "node nccu30.js",
+    "dev": "nodemon nccu30.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
