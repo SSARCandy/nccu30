@@ -4,14 +4,16 @@
   </div>
   <div class="center-align" style="min-height:250px; background-color:#ECEFF1;">
     <!--<h5 style="margin:0; padding: 15px 0;">講者資訊</h5>-->
-    <div class="row" style="padding-top: 30px;">
+    <div class="row" style="padding: 30px 0;">
       <div class="col s12 m4">
-        <img src="<%=speechDetails.details.head%>" class="circle responsive-img" style="height:160px;">
+        <img src="<%=speechDetails.details.head%>" class="circle responsive-img" style="height:220px; border:2px solid #BDBDBD;">
       </div>
       <div class="col s12 m7" style="margin-bottom: 10px;">
         <% speechDetails.details.desc.forEach(function(d) {%>
-        <p><%=d%></p>
-        <%})%>
+          <p>
+            <%=d%>
+          </p>
+          <%})%>
       </div>
       <div class="col m1">&nbsp;</div>
     </div>
@@ -21,7 +23,7 @@
       <a href="<%=i%>"> <img src="<%=i%>"> </a>
     <% }) %>
   </div> -->
-  <div class="carousel" style="margin-bottom: 10px;">
+  <div class="carousel">
     <div class="center-align">
       <h5 style="margin-bottom: 0;">相片牆</h5>
     </div>
