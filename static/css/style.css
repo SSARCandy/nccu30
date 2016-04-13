@@ -156,12 +156,12 @@ li {
 		margin: 5px 0;
 	}
 	.speech-list-img {
-		height: 500px;
+		height: 400px;
 		margin-bottom: 10px;
 	}
 	.speech-list-text {
 		width: 25%;
-		padding: 175px 0;
+		padding: 150px 0;
 		align-items: center;
 		-webkit-align-items: : center;
 	}
