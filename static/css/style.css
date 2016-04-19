@@ -135,6 +135,9 @@ li {
 		align-items: flex-start;
 		-webkit-align-items: : flex-start;
 	}
+	.speech-img {
+		height: 220px;
+	}
 }
 
 @media only screen and (min-width: 601px) {
@@ -164,6 +167,9 @@ li {
 		padding: 150px 0;
 		align-items: center;
 		-webkit-align-items: : center;
+	}
+	.speech-img {
+		height: 92vh;
 	}
 }
 
