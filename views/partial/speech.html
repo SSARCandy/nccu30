@@ -1,9 +1,18 @@
 <div id="body">
-  <div class="parallax-container speech-img">
-    <div class="parallax"><img class="responsive-img" src="http://dummyimage.com/1400x800/000/fff"></div>
+ <div class="slider speech-img">
+    <ul class="slides">
+      <% covers.forEach(function(c) {%>
+      <li>
+        <img src="<%=c%>" class="cover-filter"> 
+        <div class="caption left-align fixed-text">
+          <h3><%=speechDetails.name%></h3>
+          <h5 class="light grey-text text-lighten-3"><%=speechDetails.details.slogan%></h5>
+        </div>
+      </li>
+      <%})%>
+    </ul>
   </div>
-
-
+      
 
   <div class="center-align" style="min-height:250px; background-color:#ECEFF1;">
     <!--<h5 style="margin:0; padding: 15px 0;">講者資訊</h5>-->
@@ -16,7 +25,7 @@
           <p>
             <%=d%>
           </p>
-          <%})%>
+        <%})%>
       </div>
       <div class="col m1">&nbsp;</div>
     </div>

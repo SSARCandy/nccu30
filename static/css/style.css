@@ -136,7 +136,7 @@ li {
 		-webkit-align-items: : flex-start;
 	}
 	.speech-img {
-		height: 220px;
+		height: 92vh !important;
 	}
 }
 
@@ -169,7 +169,7 @@ li {
 		-webkit-align-items: : center;
 	}
 	.speech-img {
-		height: 92vh;
+		height: 92vh !important;
 	}
 }
 
@@ -197,4 +197,14 @@ nav ul a:hover {
 .dark-filter {
 	filter: brightness(90%);
 	-webkit-filter: brightness(90%);
+}
+
+.cover-filter {
+	filter: brightness(40%);
+	-webkit-filter: brightness(40%);	
+}
+
+.fixed-text {
+	transform: inherit !important;
+	opacity: 1 !important;
 }

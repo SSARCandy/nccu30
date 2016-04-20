@@ -39,11 +39,14 @@ router.get('/:tab', function*() {
 
 router.get('/speech/:speech', function*() {
   const template = fs.readFileSync(__dirname + '/views/index.html', 'utf-8');
-  const imgs = getFileList(__dirname + config.galleryUrl + this.params.speech);
+  const imgs = getFileList(__dirname + config.galleryUrl + this.params.speech, this.params.speech);
+  console.log(this.params.speech, imgs);
+  const covers = imgs.filter((img)=> { return img.indexOf('cover') !== -1; });
   const speechDetails = speechlist[parseInt(this.params.speech, 10) - 1];
 
   this.body = ejs.render(template, {
     img: imgs,
+    covers: covers,
     filename: __dirname + '/views/index.html',
     speechDetails: speechDetails,
     tab: 'speech',
@@ -58,11 +61,11 @@ app.listen(process.env.PORT || 3020, function() {
   console.log('Server start on Port: ' + (process.env.PORT || 3020));
 });
 
-function getFileList(dir) {
+function getFileList(dir, num) {
   var results = [];
 
   fs.readdirSync(dir).forEach(function(file) {
-    results.push('/images/gallery/1/' + file);
+    results.push(`/images/gallery/${num}/${file}`);
   });
   return results;
 }
