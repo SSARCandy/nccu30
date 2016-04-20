@@ -57,8 +57,8 @@ router.get('/speech/:speech', function*() {
 app.use(router.routes());
 app.use(require('koa-static')(__dirname + '/static'));
 
-app.listen(process.env.PORT || 3020, function() {
-  console.log('Server start on Port: ' + (process.env.PORT || 3020));
+app.listen(process.env.PORT || 3210, function() {
+  console.log('Server start on Port: ' + (process.env.PORT || 3210));
 });
 
 function getFileList(dir, num) {
