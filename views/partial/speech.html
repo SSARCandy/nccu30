@@ -4,43 +4,38 @@
       <% covers.forEach(function(c) {%>
         <li>
           <img src="<%=c%>" class="cover-filter">
-          <div class="caption left-align fixed-text">
+          <div class="caption speech center-align fixed-text">
             <h3><%=speechDetails.name%></h3>
             <h5 class="light grey-text text-lighten-3"><%=speechDetails.details.slogan%></h5>
           </div>
         </li>
-      <%})%>
+        <%})%>
     </ul>
   </div>
-
-
   <div class="left-align" style="background-color:#ECEFF1;">
     <div class="row container" style="padding: 30px 0;">
-    <h5 style="margin:0; padding: 15px 0;">關於講者</h5>
-      <div class="col s12 m4">
-        <img src="<%=speechDetails.details.head%>" class="circle responsive-img" style="height:100px; border:2px solid #BDBDBD;">
+      <h5 style="margin:0; padding: 15px 0;">關於講者</h5>
+      <div class="col s12 m4 center-sm">
+        <img src="<%=speechDetails.details.head%>" class="circle responsive-img" style="height:110px; border:2px solid #BDBDBD;">
       </div>
       <div class="col s12 m7" style="margin-bottom: 10px;">
         Commodo nunc quis nisi cras metus au. Nisi risus orci nulla cras. Vel consectetur dictum sagittis. Justo enim auctor vulputate et, nisl lacinia massa ante.
       </div>
     </div>
   </div>
-  <div class="container caption">
+  <div class="container caption" style="margin-top:40px; margin-bottom:30px;">
     <% speechDetails.details.desc.forEach(function(d) {%>
       <p>
         <%=d%>
       </p>
-    <%})%>
+      <%})%>
   </div>
-
-
-  <div class="container ">
+  <div class="container" style="margin-bottom:30px;">
     <h5 style="margin:0; padding: 15px 0;">照片回顧</h5>
-  <div id="gallery">
-    <% img.forEach(function(i) {%>
-      <a href="<%=i%>"> <img src="<%=i%>"> </a>
-      <% }) %>
+    <div id="gallery">
+      <% img.forEach(function(i) {%>
+        <a href="<%=i%>"> <img src="<%=i%>"> </a>
+        <% }) %>
+    </div>
   </div>
-  </div>
-
 </div>

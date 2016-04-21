@@ -115,6 +115,9 @@ li {
 		left: 5%;
 		width: 90%;
 	}
+	.slider .slides li .caption.speech {
+		top: 5%;
+	}
 	.home-banner {
 		margin-top: 15px;
 	}
@@ -138,6 +141,9 @@ li {
 	.speech-img {
 		height: 92vh !important;
 	}
+	.center-sm {
+		text-align: center;
+	}
 }
 
 @media only screen and (min-width: 601px) {
@@ -145,6 +151,9 @@ li {
 		top: 10%;
 		left: 10%;
 		width: 80%;
+	}
+	.slider .slides li .caption.speech {
+		top: 38%;
 	}
 	.home-banner {
 		padding-top: 17%;
@@ -173,6 +182,9 @@ li {
 	.speech-img {
 		height: 92vh !important;
 	}
+	.center-sm {
+		text-align: left;
+	}
 }
 
 @media only screen and (min-width: 1401px) {
@@ -199,7 +211,6 @@ nav ul a:hover {
 .dark-filter {
 	filter: brightness(90%);
 	-webkit-filter: brightness(90%);
-	transition: 0.8s;
 }
 
 .dark-filter:hover {
@@ -208,8 +219,8 @@ nav ul a:hover {
 }
 
 .cover-filter {
-	filter: brightness(40%);
-	-webkit-filter: brightness(40%);
+	filter: brightness(50%);
+	-webkit-filter: brightness(50%);
 }
 
 .fixed-text {
