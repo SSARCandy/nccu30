@@ -161,6 +161,8 @@ li {
 	.speech-list-img {
 		height: 400px;
 		margin-bottom: 10px;
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
 	}
 	.speech-list-text {
 		width: 25%;
@@ -197,11 +199,17 @@ nav ul a:hover {
 .dark-filter {
 	filter: brightness(90%);
 	-webkit-filter: brightness(90%);
+	transition: 0.8s;
+}
+
+.dark-filter:hover {
+	filter: brightness(65%);
+	-webkit-filter: brightness(65%);
 }
 
 .cover-filter {
 	filter: brightness(40%);
-	-webkit-filter: brightness(40%);	
+	-webkit-filter: brightness(40%);
 }
 
 .fixed-text {
