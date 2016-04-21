@@ -224,3 +224,10 @@ nav ul a:hover {
 	transform: inherit !important;
 	opacity: 1 !important;
 }
+
+.contactus-form {
+  padding-top: 50px;
+  background-color: rgba(222, 222, 222, 0.69);
+  border-radius: 5px;
+  padding-bottom: 30px;
+}

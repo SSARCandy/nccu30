@@ -1,1 +1,37 @@
-contactUs
+<div class="container">
+  <div class="row contactus-form" >
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="fa fa-user prefix" aria-hidden="true"></i>
+          <input id="contactus_name" type="text" class="validate">
+          <label for="contactus_name">姓名</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="fa fa-envelope prefix" aria-hidden="true"></i>
+          <input id="contactus_email" data-error="格式不正確" type="email" class="validate">
+          <label for="contactus_email">電子郵件</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="fa fa-phone-square prefix" aria-hidden="true"></i>
+          <input id="contactus_phone" type="tel" class="validate">
+          <label for="contactus_phone">聯絡電話(非必填)</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="fa fa-pencil-square prefix" aria-hidden="true"></i>
+          <textarea id="contactus_content" class="materialize-textarea" class="validate"></textarea>
+          <label for="contactus_content">有任何問題皆可詢問。</label>
+        </div>
+      </div>
+      <div class="row">
+          <a href="javascript:void(0)" class="btn btn-large right-align" style="float:right; margin-right: 10px; width: 250px;" onclick="submitContactUs()">送出</a>
+      </div>
+    </form>
+  </div>
+</div>
