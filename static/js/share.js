@@ -9,7 +9,7 @@ function submitContactUs() {
 	var contents = $('#contactus_content').val();
 
 	if (!name || !email || !contents) {
-		Materialize.toast('請填寫必填欄位!', 4000);
+		Materialize.toast('請填寫必填欄位！', 4000);
 		return;
 	}
 	
@@ -24,10 +24,10 @@ function submitContactUs() {
 		type: "POST",
 		dataType: "xml",
 		success: function () {
-			Materialize.toast('回饋已送出!', 4000);
+			Materialize.toast('回饋已送出！', 4000);
 		},
 		error: function (err) {
-			Materialize.toast('回饋已送出!', 4000);
+			Materialize.toast('回饋已送出！', 4000);
 			console.log(err);
 		}
 	});
