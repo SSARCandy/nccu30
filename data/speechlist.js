@@ -8,6 +8,11 @@ module.exports = [{
     head: 'images/head/1.jpg',
     slogan: '中華文化是一種世界語',
     aboutSpeecher: '',
+    youtube: [
+      '1MJ7-mFRWX0',
+      'w_mXnG51oIU',
+      'ZTsHy4pD9DM'
+    ]
   }
 }, {
   name: '為土地種一個希望',
@@ -19,6 +24,15 @@ module.exports = [{
     head: 'images/head/2.jpg',
     slogan: '',
     aboutSpeecher: '',
+    youtube: [
+      'VFUgzl-qW8c',
+      '8U4AeVLDY6s',
+      'u8MGAw7BD3k',
+      '-3Unl-uwco4',
+      'GGZFyeRw1cU',
+      'JJ2KbaY1zbY',
+      'Dzj5DEviT20'
+    ]
   }
 }, {
   name: '貨幣戰爭',
@@ -30,6 +44,9 @@ module.exports = [{
     head: 'images/head/3.jpg',
     slogan: '',
     aboutSpeecher: '',
+    youtube: [
+      '6aFkta-hJLk'
+    ]
   }
 }, {
   name: '我是歌手的心路歷程',
@@ -40,6 +57,14 @@ module.exports = [{
     desc: ['第四屆政大三十大講堂，邀請到歌手 彭佳慧女士，述說二十年來成為歌手的心路歷程，並邀請到政大商學院副院長 別蓮蒂女士作為與談人，一同深探台灣音樂產業之大環境，肯定台灣在創作上的軟實力。', '此次演講有別於歷屆純演講的形式，邀請第九屆政大金旋獎獨唱組冠軍 鄭雙雙、第二十九屆政大金旋獎評審團大獎得主 李友廷，作為開場表演嘉賓。邀請歌手放下巨星光環，作為主講人與青年學子對話，也讓政大學生一睹巨星不同的一面。'],
     head: 'images/head/4.jpg',
     aboutSpeecher: '',
+    youtube: [
+      '9-5r0zFzgGQ',
+      'dig_AYcg0os',
+      '_bNyhDqJxeQ',
+      'W6fdU3g_7ZA',
+      'uD4RPTLURBM',
+      'dtuKcoWkSP0'
+    ]
   }
 }, {
   name: '挑戰，引領時代',
@@ -51,6 +76,9 @@ module.exports = [{
     head: 'images/head/5.jpg',
     slogan: '',
     aboutSpeecher: '',
+    youtube: [
+      'V0sbXBcRemQ'
+    ]
   }
 }, {
   name: '改變，從台北開始',
@@ -62,6 +90,8 @@ module.exports = [{
     head: 'images/head/6.jpg',
     slogan: '',
     aboutSpeecher: '',
+    youtube: [
+    ]
   }
 }, {
   name: '李開復談世界觀',
@@ -73,5 +103,7 @@ module.exports = [{
     head: 'images/head/7.jpg',
     slogan: '',
     aboutSpeecher: '',
+    youtube: [
+    ]
   }
 }];
