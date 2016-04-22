@@ -12,7 +12,7 @@ function submitContactUs() {
 		Materialize.toast('請填寫必填欄位！', 4000, 'toast-error');
 		return;
 	}
-	
+
 	$.ajax({
 		url: "https://docs.google.com/forms/d/1m_q8ASyLAcGGzfgVjXnrUIIVN2AoqGKhVZF0DVFieV8/formResponse",
 		data: {
@@ -35,29 +35,34 @@ function submitContactUs() {
 }
 
 $(document).ready(function (e) {
-	$(".nav li").on("click", function () {
-		$(".nav li").removeClass("active");
-		$(this).addClass("active");
+	$(".button-collapse").sideNav({
+		closeOnClick: true 
 	});
+	init();
+});
+
+function init() {
 	// mobile hamburger bar
-	$(".button-collapse").sideNav();
 	$('.parallax').parallax();
 	$('.carousel').carousel({ dist: -10, padding: -20, shift: 0 });
 	$('.materialboxed').materialbox();
 
-	$('.slider')
-		.slider({
-			full_width: true,
-			height: '101%',
-			indicators: false,
-			// interval: 10000,
-		});
-	$('.slider.home')
-		.slider({
-			full_width: true,
-			height: $(window).height() - 64,
-			indicators: false,
-			// interval: 10000,
-		});
-
-});
+	$('.slider').slider({
+		full_width: true,
+		height: '101%',
+		indicators: false,
+		// interval: 10000,
+	});
+	
+	$('.slider.home').slider({
+		full_width: true,
+		height: $(window).height() - 64,
+		indicators: false,
+		// interval: 10000,
+	});
+	
+  $('ul>li').on('click', function () {
+    $('ul>li').removeClass('active');
+    $(this).addClass('active');
+	});
+}

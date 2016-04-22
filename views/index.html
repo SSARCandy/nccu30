@@ -30,39 +30,39 @@
     <div class="navbar-fixed">
       <nav style="height: 64px;">
         <div class="nav-wrapper grey lighten-4">
-          <a href="#!" class="brand-logo"><img src="/images/logo/logo.png" style="height: 62px; padding: 10px 0;"></a>
+          <a href="/home" class="brand-logo"><img src="/images/logo/logo.png" style="height: 62px; padding: 10px 0;"></a>
           <a href="#" data-activates="mobile-demo" class="button-collapse">
             <i class="fa fa-bars black-text" style="line-height: 64px; font-size: 1.3rem;"></i>
           </a>
           <ul class="right hide-on-med-and-down">
             <li class="hvr-underline-reveal <% if (tab.indexOf('speech') !== -1) {%> active <%}%>">
-              <a class="nav-span black-text" href="/speechlist">歷屆回顧</a>
+              <a class="nav-span black-text" onclick="goto('/speechlist')">歷屆回顧</a>
             </li>
             <li class="hvr-underline-reveal <% if (tab === 'signup') {%> active <%}%>">
-              <a class="nav-span black-text" href="/signup">搶先報名</a>
+              <a class="nav-span black-text" onclick="goto('/signup')">搶先報名</a>
             </li>
             <li class="hvr-underline-reveal <% if (tab === 'about') {%> active <%}%>">
-              <a class="nav-span black-text" href="/about">關於我們</a>
+              <a class="nav-span black-text" onclick="goto('/about')">關於我們</a>
             </li>
             <li class="hvr-underline-reveal <% if (tab === 'contact') {%> active <%}%>">
-              <a class="nav-span black-text" href="/contact">聯絡我們</a>
+              <a class="nav-span black-text" onclick="goto('/contact')">聯絡我們</a>
             </li>
           </ul>
           <ul class="side-nav" id="mobile-demo">
             <li>
-              <a class="nav-span black-text" href="#!">回到首頁</a>
+              <a class="nav-span black-text" onclick="goto('/home')">回到首頁</a>
             </li>
             <li class="<% if (tab.indexOf('speech') !== -1) {%> active <%}%>">
-              <a class="nav-span black-text" href="/speechlist">歷屆回顧</a>
+              <a class="nav-span black-text" onclick="goto('/speechlist')">歷屆回顧</a>
             </li>
             <li class="<% if (tab === 'signup') {%> active <%}%>">
-              <a class="nav-span black-text" href="/signup">搶先報名</a>
+              <a class="nav-span black-text" onclick="goto('/signup')">搶先報名</a>
             </li>
             <li class="<% if (tab === 'about') {%> active <%}%>">
-              <a class="nav-span black-text" href="/about">關於我們</a>
+              <a class="nav-span black-text" onclick="goto('/about')">關於我們</a>
             </li>
             <li class="<% if (tab === 'contact') {%> active <%}%>">
-              <a class="nav-span black-text" href="/contact">聯絡我們</a>
+              <a class="nav-span black-text" onclick="goto('/contact')">聯1絡我們</a>
             </li>
           </ul>
         </div>
@@ -94,7 +94,35 @@
     </div>
   </footer>
   <!--<script src="/components/perfect-scrollbar/js/perfect-scrollbar.js"></script>-->
+  <script>
+    function goto(url) {
+      var tpl;
+      getTemplate(url, (err, template)=>{
+        tpl = $(template);//.html();
+        var html = $('#body', tpl);
+        html = html.html();
+        $('#body').html(html);
+        init();
+        window.history.pushState({
+          "html": template,
+          "pageTitle": template.pageTitle
+        },"", url);
+      })
+    }
+    function getTemplate(file, callback) {
+        $.ajax(file, {
+            type: 'GET',
+            success: function(data, textStatus, xhr) {
+            return callback(null, data);
+            },
+            error: function(xhr, textStatus, error) {
+            return callback(error);
+            }
+        });
+    }
+  </script>
   <script async src="/js/share.js"></script>
+
 </body>
 
 </html>
