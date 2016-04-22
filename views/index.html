@@ -103,6 +103,8 @@
         html = html.html();
         $('#body').html(html);
         init();
+        $('body').scrollTop(0);
+        
         window.history.pushState({
           "html": template,
           "pageTitle": template.pageTitle
