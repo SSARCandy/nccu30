@@ -244,7 +244,7 @@ nav ul a:hover {
 	width: 250px;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 400px) {
 	.contactus-form {
 		padding-top: 50px;
 		padding-left: 10px;
