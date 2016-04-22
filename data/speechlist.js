@@ -58,12 +58,12 @@ module.exports = [{
     head: 'images/head/4.jpg',
     aboutSpeecher: '',
     youtube: [
+      'dtuKcoWkSP0',
       '9-5r0zFzgGQ',
       'dig_AYcg0os',
       '_bNyhDqJxeQ',
       'W6fdU3g_7ZA',
-      'uD4RPTLURBM',
-      'dtuKcoWkSP0'
+      'uD4RPTLURBM'
     ]
   }
 }, {

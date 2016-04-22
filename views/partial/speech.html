@@ -38,4 +38,14 @@
         <% }) %>
     </div>
   </div>
+  <% if (speechDetails.details.youtube.length){%>
+    <div class="container" style="margin-bottom:30px;">
+      <h5 style="margin:0; padding: 15px 0;">相關影片</h5>
+      <div class="video-container" style="margin-bottom:10px;">
+        <iframe src="https://www.youtube.com/embed/<%=speechDetails.details.youtube[0]%>" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <br/>
+      <a href="<%= speechDetails.url%>/youtube">看更多...</a>
+    </div>
+  <% } %>
 </div>

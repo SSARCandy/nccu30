@@ -37,6 +37,21 @@ router.get('/:tab', function*() {
   });
 })
 
+router.get('/speech/:speech/youtube', function*() {
+  const template = fs.readFileSync(__dirname + '/views/index.html', 'utf-8');
+  const imgs = getFileList(__dirname + config.galleryUrl + this.params.speech, this.params.speech);
+  const covers = imgs.filter((img)=> { return img.indexOf('cover') !== -1; });
+  const speechDetails = speechlist[parseInt(this.params.speech, 10) - 1];
+
+  this.body = ejs.render(template, {
+    covers: covers,
+    filename: __dirname + '/views/index.html',
+    speechDetails: speechDetails,
+    tab: 'speech',
+    partialUrl: 'partial/speechvediolist.html'
+  });
+});
+
 router.get('/speech/:speech', function*() {
   const template = fs.readFileSync(__dirname + '/views/index.html', 'utf-8');
   const imgs = getFileList(__dirname + config.galleryUrl + this.params.speech, this.params.speech);
