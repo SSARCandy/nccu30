@@ -1,3 +1,8 @@
+<link rel="stylesheet" href="/components/justifiedGallery/dist/css/justifiedGallery.min.css" />
+<link rel="stylesheet" href="/components/swipebox/src/css/swipebox.min.css">
+<script src="/components/justifiedGallery/dist/js/jquery.justifiedGallery.min.js"></script>
+<script src="/components/swipebox/src/js/jquery.swipebox.min.js"></script>
+
 <div id="body">
   <div class="slider speech-img">
     <ul class="slides">
@@ -19,7 +24,8 @@
         <img src="<%=speechDetails.details.head%>" class="circle responsive-img" style="height:110px; border:2px solid #BDBDBD;">
       </div>
       <div class="col s12 m7" style="margin-bottom: 10px;">
-        Commodo nunc quis nisi cras metus au. Nisi risus orci nulla cras. Vel consectetur dictum sagittis. Justo enim auctor vulputate et, nisl lacinia massa ante.
+        Commodo nunc quis nisi cras metus au. Nisi risus orci nulla cras. Vel consectetur dictum sagittis. Justo enim auctor vulputate
+        et, nisl lacinia massa ante.
       </div>
     </div>
   </div>
@@ -47,5 +53,18 @@
       <br/>
       <a href="<%= speechDetails.url%>/youtube">看更多...</a>
     </div>
-  <% } %>
+    <% } %>
 </div>
+
+<script>
+  $('#gallery')
+		.justifiedGallery({
+			lastRow: 'nojustify',
+			rowHeight: 100,
+			rel: 'gallery2',
+			margins: 1
+		})
+		.on('jg.complete', function () {
+			$('#gallery a').swipebox();
+		});
+</script>

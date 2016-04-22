@@ -15,24 +15,24 @@ const config = require('./config.js');
 
 
 // logger
-app.use(function*(next) {
+app.use(function* (next) {
   const start = new Date();
   yield next;
   const ms = new Date() - start;
   console.log('%s %s - %s ms', this.method, this.url, ms);
 });
 
-app.use(compress({ 
- threshold: 2048,
- flush: require('zlib').Z_SYNC_FLUSH
+app.use(compress({
+  threshold: 2048,
+  flush: require('zlib').Z_SYNC_FLUSH
 }))
 
 
-router.get('/', function*() {
+router.get('/', function* () {
   this.redirect('/home');
 });
 
-router.get('/:tab', function*() {
+router.get('/:tab', function* () {
   const template = fs.readFileSync(__dirname + '/views/index.html', 'utf-8');
   const tab = this.params.tab;
 
@@ -44,10 +44,10 @@ router.get('/:tab', function*() {
   });
 })
 
-router.get('/speech/:speech/youtube', function*() {
+router.get('/speech/:speech/youtube', function* () {
   const template = fs.readFileSync(__dirname + '/views/index.html', 'utf-8');
   const imgs = getFileList(__dirname + config.galleryUrl + this.params.speech, this.params.speech);
-  const covers = imgs.filter((img)=> { return img.indexOf('cover') !== -1; });
+  const covers = imgs.filter((img) => { return img.indexOf('cover') !== -1; });
   const speechDetails = speechlist[parseInt(this.params.speech, 10) - 1];
 
   this.body = ejs.render(template, {
@@ -59,11 +59,11 @@ router.get('/speech/:speech/youtube', function*() {
   });
 });
 
-router.get('/speech/:speech', function*() {
+router.get('/speech/:speech', function* () {
   const template = fs.readFileSync(__dirname + '/views/index.html', 'utf-8');
   const imgs = getFileList(__dirname + config.galleryUrl + this.params.speech, this.params.speech);
   console.log(this.params.speech, imgs);
-  const covers = imgs.filter((img)=> { return img.indexOf('cover') !== -1; });
+  const covers = imgs.filter((img) => { return img.indexOf('cover') !== -1; });
   const speechDetails = speechlist[parseInt(this.params.speech, 10) - 1];
 
   this.body = ejs.render(template, {
@@ -79,14 +79,14 @@ router.get('/speech/:speech', function*() {
 app.use(router.routes());
 app.use(require('koa-static')(__dirname + '/static'));
 
-app.listen(process.env.PORT || 3210, function() {
+app.listen(process.env.PORT || 3210, function () {
   console.log('Server start on Port: ' + (process.env.PORT || 3210));
 });
 
 function getFileList(dir, num) {
   var results = [];
 
-  fs.readdirSync(dir).forEach(function(file) {
+  fs.readdirSync(dir).forEach(function (file) {
     results.push(`/images/gallery/${num}/${file}`);
   });
   return results;
