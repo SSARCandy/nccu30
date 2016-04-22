@@ -36,8 +36,10 @@ function submitContactUs() {
 
 $(document).ready(function (e) {
 	$(".button-collapse").sideNav({
-		closeOnClick: true 
+		closeOnClick: true
 	});
+
+
 	init();
 });
 
@@ -53,16 +55,22 @@ function init() {
 		indicators: false,
 		// interval: 10000,
 	});
-	
+
 	$('.slider.home').slider({
 		full_width: true,
 		height: $(window).height() - 64,
 		indicators: false,
 		// interval: 10000,
 	});
-	
+
   $('ul>li').on('click', function () {
     $('ul>li').removeClass('active');
     $(this).addClass('active');
 	});
+
 }
+
+// handle back
+window.addEventListener("popstate", function (e) {
+	location.reload();
+});

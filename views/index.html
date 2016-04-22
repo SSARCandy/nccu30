@@ -115,10 +115,10 @@
         $.ajax(file, {
             type: 'GET',
             success: function(data, textStatus, xhr) {
-            return callback(null, data);
+              return callback(null, data);
             },
             error: function(xhr, textStatus, error) {
-            return callback(error);
+              return callback(error);
             }
         });
     }
