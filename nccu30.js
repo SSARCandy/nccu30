@@ -2,6 +2,7 @@
 
 require('babel-core/register')
 const koa = require('koa')
+const compress = require('koa-compress')
 const app = koa()
 const router = require('koa-router')()
 const Promise = require('bluebird')
@@ -20,6 +21,12 @@ app.use(function*(next) {
   const ms = new Date() - start;
   console.log('%s %s - %s ms', this.method, this.url, ms);
 });
+
+app.use(compress({ 
+ threshold: 2048,
+ flush: require('zlib').Z_SYNC_FLUSH
+}))
+
 
 router.get('/', function*() {
   this.redirect('/home');
