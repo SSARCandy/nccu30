@@ -71,6 +71,8 @@ function init() {
 }
 
 // handle back
-window.addEventListener("popstate", function (e) {
-	location.reload();
-});
+setTimeout( function() {
+	window.addEventListener("popstate", function (e) {
+		location.reload();
+	});
+}, 500 );
