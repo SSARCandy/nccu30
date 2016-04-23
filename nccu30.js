@@ -27,11 +27,6 @@ app.use(compress({
   flush: require('zlib').Z_SYNC_FLUSH
 }))
 
-
-router.get('/', function* () {
-  this.redirect('/home');
-});
-
 router.get('/:tab', function* () {
   const template = fs.readFileSync(__dirname + '/views/index.html', 'utf-8');
   const tab = this.params.tab;
@@ -74,6 +69,11 @@ router.get('/speech/:speech', function* () {
     tab: 'speech',
     partialUrl: 'partial/speech.html'
   });
+});
+
+
+router.get('/', function* () {
+  this.redirect('/home');
 });
 
 app.use(router.routes());
