@@ -148,6 +148,9 @@ nav .nav-wrapper {
 	.center-sm {
 		text-align: center;
 	}
+	footer.page-footer {
+		margin-top: 3%;
+	}
 }
 
 @media only screen and (min-width: 601px) {
@@ -181,6 +184,9 @@ nav .nav-wrapper {
 	}
 	.center-sm {
 		text-align: left;
+	}
+	footer.page-footer {
+		margin-top: 5%;
 	}
 }
 
@@ -293,6 +299,7 @@ nav ul a:hover {
 		filter: blur(20px);
 	}
 }
+
 @media only screen and (min-width: 1600px) {
 	.bg-blur {
 		position: absolute;
@@ -304,10 +311,12 @@ nav ul a:hover {
 		filter: blur(20px);
 	}
 }
+
 .float-container {
 	margin-right: auto;
-  margin-left: auto;
+	margin-left: auto;
 }
+
 @media only screen and (min-width: 900px) {
 	.float-container {
 		width: 800px;
