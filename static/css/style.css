@@ -151,6 +151,22 @@ nav .nav-wrapper {
 	.signup-btn {
 		padding-top: 53%;
 	}
+	.contactus-submit {
+		float: right;
+		margin-right: 10px;
+		width: 120px;
+		height: 48px;
+		line-height: 48px;
+	}
+	.contactus-form {
+		padding-top: 50px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 30px;
+		background-color: rgba(222, 222, 222, 0.69);
+		border-radius: 5px;
+		margin-bottom: 25px;
+	}
 }
 
 @media only screen and (min-width: 601px) {
@@ -187,6 +203,15 @@ nav .nav-wrapper {
 	}
 	.signup-btn {
 		padding-top: 31%;
+	}
+	.contactus-submit {
+		height: 54px;
+		line-height: 54px;
+	}
+	.contactus-form {
+		padding-left: 50px;
+		padding-right: 50px;
+		margin-bottom: 25px;
 	}
 }
 
@@ -234,19 +259,10 @@ nav ul a:hover {
 	margin: 6px 0;
 }
 
-.contactus-form {
-	padding-top: 50px;
-	padding-left: 50px;
-	padding-right: 50px;
-	padding-bottom: 30px;
-	background-color: rgba(222, 222, 222, 0.69);
-	border-radius: 5px;
-}
-
 .contactus-submit {
 	float: right;
 	margin-right: 10px;
-	width: 250px;
+	width: 160px;
 }
 
 @media only screen and (max-width: 400px) {
@@ -257,11 +273,6 @@ nav ul a:hover {
 		padding-bottom: 30px;
 		background-color: rgba(222, 222, 222, 0.69);
 		border-radius: 5px;
-	}
-	.contactus-submit {
-		float: right;
-		margin-right: 10px;
-		width: 150px;
 	}
 }
 
