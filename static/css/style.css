@@ -148,8 +148,8 @@ nav .nav-wrapper {
 	.center-sm {
 		text-align: center;
 	}
-	footer.page-footer {
-		margin-top: 3%;
+	.signup-btn {
+		padding-top: 53%;
 	}
 }
 
@@ -185,8 +185,8 @@ nav .nav-wrapper {
 	.center-sm {
 		text-align: left;
 	}
-	footer.page-footer {
-		margin-top: 5%;
+	.signup-btn {
+		padding-top: 31%;
 	}
 }
 
