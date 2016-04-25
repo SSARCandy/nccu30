@@ -50,7 +50,7 @@ router.get('/speech/:speech/youtube', function* () {
     filename: __dirname + '/views/index.html',
     speechDetails: speechDetails,
     tab: 'speech',
-    partialUrl: 'partial/speechvediolist.html'
+    partialUrl: 'partial/speechvideolist.html'
   });
 });
 
