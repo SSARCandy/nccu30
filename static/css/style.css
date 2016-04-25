@@ -124,9 +124,9 @@ nav .nav-wrapper {
 	.btn.home {
 		margin: 5px 20px;
 		padding: 0 10px;
-		width: 160px;
-		height: 44px;
-		line-height: 47px;
+		width: 180px;
+		height: 54px;
+		line-height: 54px;
 		font-size: 1.1rem;
 	}
 	.speech-list-img {
@@ -181,7 +181,6 @@ nav .nav-wrapper {
 	.btn.home {
 		margin: 0 20px;
 		width: 200px;
-		line-height: 47px;
 	}
 	.speech-list-img {
 		height: 400px;
