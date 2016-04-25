@@ -216,13 +216,8 @@ nav ul a:hover {
 }
 
 .dark-filter {
-	filter: brightness(90%);
-	-webkit-filter: brightness(90%);
-}
-
-.dark-filter:hover {
-	filter: brightness(65%);
-	-webkit-filter: brightness(65%);
+	filter: brightness(80%);
+	-webkit-filter: brightness(80%);
 }
 
 .cover-filter {
