@@ -265,17 +265,6 @@ nav ul a:hover {
 	width: 160px;
 }
 
-@media only screen and (max-width: 400px) {
-	.contactus-form {
-		padding-top: 50px;
-		padding-left: 10px;
-		padding-right: 10px;
-		padding-bottom: 30px;
-		background-color: rgba(222, 222, 222, 0.69);
-		border-radius: 5px;
-	}
-}
-
 .video-container {
 	position: relative;
 	padding-bottom: 56.25%;
