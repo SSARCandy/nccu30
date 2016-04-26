@@ -36,6 +36,7 @@ function submitContactUs() {
 
 $(document).ready(function (e) {
 	$(".button-collapse").sideNav({
+		menuWidth: '85%',
 		closeOnClick: true
 	});
 
