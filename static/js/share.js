@@ -69,6 +69,11 @@ function init() {
     $(this).addClass('active');
 	});
 
+  // Hack materilize slider, disable pan listener
+	if ($('.slider').length > 0) {
+		var hammertime = new Hammer($('#slider')[0]);
+		hammertime.get('pan').set({ enable: false });
+	}
 }
 
 // handle back
