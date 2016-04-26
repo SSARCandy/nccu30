@@ -277,6 +277,10 @@ nav ul a:hover {
 	margin-left: auto;
 }
 
+.float-container.about {
+	padding-top: 60px;
+}
+
 @media only screen and (min-width: 900px) {
 	.bg-blur {
 		position: absolute;
@@ -290,6 +294,9 @@ nav ul a:hover {
 	.float-container {
 		width: 800px;
 	}
+	.float-container.about {
+		padding-top: 5%;
+	}
 }
 
 @media only screen and (min-width: 1600px) {
@@ -302,5 +309,8 @@ nav ul a:hover {
 	}
 	.float-container {
 		width: 1080px;
+	}
+	.float-container.about {
+		width: 1200px;
 	}
 }
