@@ -288,8 +288,8 @@ nav ul a:hover {
 		height: 410px;
 		margin: -30px -5% 0;
 		text-align: center;
-		-webkit-filter: blur(20px);
-		filter: blur(20px);
+		-webkit-filter: blur(30px);
+		filter: blur(30px);
 	}
 	.float-container {
 		width: 800px;
