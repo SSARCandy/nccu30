@@ -96,7 +96,7 @@
   <script>
     function goto(url) {
       var tpl;
-      getTemplate(url, (err, template)=>{
+      getTemplate(url, function(err, template) {
         tpl = $(template);//.html();
         var html = $('#body', tpl);
         html = html.html();
