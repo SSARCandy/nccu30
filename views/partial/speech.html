@@ -38,10 +38,12 @@
   </div>
   <div class="container" style="margin-bottom:30px;">
     <h5 style="margin:0; padding: 15px 0;">照片回顧</h5>
-    <div id="gallery">
-      <% img.forEach(function(i) {%>
-        <a href="<%=i%>"> <img src="<%=i%>"> </a>
-        <% }) %>
+    <div style="max-height: 400px; overflow-y: scroll;">
+	    <div id="gallery">
+	      <% img.forEach(function(i) {%>
+	        <a href="<%=i%>"> <img src="<%=i%>"> </a>
+	        <% }) %>
+	    </div>
     </div>
   </div>
   <% if (speechDetails.details.youtube.length){%>
