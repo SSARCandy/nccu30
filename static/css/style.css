@@ -171,6 +171,11 @@ nav .nav-wrapper {
 		margin: 36px 7.5%;
 		padding-bottom: 42%;
 	}
+	.see-more {
+		padding-left: 26px;
+		border-radius: 8px;
+		margin-top: 10px;
+	}
 }
 
 @media only screen and (min-width: 601px) {
@@ -225,6 +230,9 @@ nav .nav-wrapper {
 	}
 	.home-space.video {
 		margin: 60px 7.5%;
+	}
+	.see-more {
+		margin-top: 20px;
 	}
 }
 
@@ -319,4 +327,68 @@ nav ul a:hover {
 	.float-container.about {
 		width: 1200px;
 	}
+}
+
+@-webkit-keyframes hvr-icon-wobble-horizontal {
+	16.65% {
+		-webkit-transform: translateX(6px);
+		transform: translateX(6px);
+	}
+	33.3% {
+		-webkit-transform: translateX(-5px);
+		transform: translateX(-5px);
+	}
+	49.95% {
+		-webkit-transform: translateX(4px);
+		transform: translateX(4px);
+	}
+	66.6% {
+		-webkit-transform: translateX(-2px);
+		transform: translateX(-2px);
+	}
+	83.25% {
+		-webkit-transform: translateX(1px);
+		transform: translateX(1px);
+	}
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+
+.hvr-icon-wobble-horizontal {
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	padding-right: 2.2em;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+
+.hvr-icon-wobble-horizontal:before {
+	content: "\f061";
+	position: absolute;
+	right: 0.8em;
+	padding: 0 1px;
+	font-family: FontAwesome;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+.hvr-icon-wobble-horizontal:hover:before,
+.hvr-icon-wobble-horizontal:focus:before,
+.hvr-icon-wobble-horizontal:active:before {
+	-webkit-animation-name: hvr-icon-wobble-horizontal;
+	animation-name: hvr-icon-wobble-horizontal;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
 }

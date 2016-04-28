@@ -24,8 +24,7 @@
         <img src="<%=speechDetails.details.head%>" class="circle responsive-img" style="height:110px; border:2px solid #BDBDBD;">
       </div>
       <div class="col s12 m7" style="margin-bottom: 10px;">
-        Commodo nunc quis nisi cras metus au. Nisi risus orci nulla cras. Vel consectetur dictum sagittis. Justo enim auctor vulputate
-        et, nisl lacinia massa ante.
+        Commodo nunc quis nisi cras metus au. Nisi risus orci nulla cras. Vel consectetur dictum sagittis. Justo enim auctor vulputate et, nisl lacinia massa ante.
       </div>
     </div>
   </div>
@@ -39,36 +38,38 @@
   <div class="container" style="margin-bottom:30px;">
     <h5 style="margin:0; padding: 15px 0;">照片回顧</h5>
     <div style="max-height: 400px; overflow-y: scroll;">
-	    <div id="gallery">
-	      <% img.forEach(function(i) {%>
-	        <a href="<%=i%>"> <img src="<%=i%>"> </a>
-	        <% }) %>
-	    </div>
+      <div id="gallery">
+        <% img.forEach(function(i) {%>
+          <a href="<%=i%>"> <img src="<%=i%>"> </a>
+          <% }) %>
+      </div>
     </div>
   </div>
   <% if (speechDetails.details.youtube.length){%>
     <div class="container" style="margin-bottom:30px;">
       <h5 style="margin:0; padding: 15px 0;">相關影片</h5>
       <% for (var i = 0; i < speechDetails.details.youtube.length && i < 2; i++) { %>
-      <div class="video-container speech" style="margin-bottom:10px;">
-        <iframe src="https://www.youtube.com/embed/<%=speechDetails.details.youtube[i]%>" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <% } %>
-      <br/>
-      <a onclick="goto('<%= speechDetails.url%>/youtube')">看更多...</a>
+        <div class="video-container speech" style="margin-bottom:10px;">
+          <iframe src="https://www.youtube.com/embed/<%=speechDetails.details.youtube[i]%>" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <% } %>
+          <br/>
+          <a class="waves-effect waves-light btn hvr-icon-wobble-horizontal see-more" onclick="goto('<%= speechDetails.url%>/youtube')">
+            看更多...
+          </a>
     </div>
     <% } %>
 </div>
 
 <script>
-  $('#gallery')
-		.justifiedGallery({
-			lastRow: 'nojustify',
-			rowHeight: 100,
-			rel: 'gallery2',
-			margins: 1
-		})
-		.on('jg.complete', function () {
-			$('#gallery a').swipebox();
-		});
+$('#gallery')
+  .justifiedGallery({
+    lastRow: 'nojustify',
+    rowHeight: 100,
+    rel: 'gallery2',
+    margins: 1
+  })
+  .on('jg.complete', function() {
+    $('#gallery a').swipebox();
+  });
 </script>
