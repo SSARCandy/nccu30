@@ -34,6 +34,34 @@ function submitContactUs() {
 
 }
 
+function goto(url) {
+	getTemplate(url, function (err, template) {
+		var tpl = $(template);//.html();
+		var html = $('#body', tpl);
+		html = html.html();
+		$('#body').html(html);
+		init();
+		$('body').scrollTop(0);
+
+		window.history.pushState({
+			"html": template,
+			"pageTitle": template.pageTitle
+		}, "", url);
+	})
+}
+
+function getTemplate(file, callback) {
+	$.ajax(file, {
+		type: 'GET',
+		success: function (data, textStatus, xhr) {
+			return callback(null, data);
+		},
+		error: function (xhr, textStatus, error) {
+			return callback(error);
+		}
+	});
+}
+
 $(document).ready(function (e) {
 	$(".button-collapse").sideNav({
 		menuWidth: '85%',

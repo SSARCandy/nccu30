@@ -78,8 +78,7 @@
       <div class="row">
         <div class="col s12 center-align">
           <a class="grey-text text-lighten-3" href="https://www.facebook.com/nccu30" target="_blank" style="font-size: 40px;"><i class="fa fa-facebook-square"></i></a>
-          <a class="grey-text text-lighten-3" href="https://www.youtube.com/channel/UCNJ-aduwlGHsRVL1drIvpig"
-            target="_blank" style="font-size: 40px; margin-left:20px;"><i class="fa fa-youtube-square"></i></a>
+          <a class="grey-text text-lighten-3" href="https://www.youtube.com/channel/UCNJ-aduwlGHsRVL1drIvpig" target="_blank" style="font-size: 40px; margin-left:20px;"><i class="fa fa-youtube-square"></i></a>
         </div>
       </div>
     </div>
@@ -94,33 +93,14 @@
   </footer>
   <!--<script src="/components/perfect-scrollbar/js/perfect-scrollbar.js"></script>-->
   <script>
-    function goto(url) {
-      var tpl;
-      getTemplate(url, function(err, template) {
-        tpl = $(template);//.html();
-        var html = $('#body', tpl);
-        html = html.html();
-        $('#body').html(html);
-        init();
-        $('body').scrollTop(0);
-        
-        window.history.pushState({
-          "html": template,
-          "pageTitle": template.pageTitle
-        },"", url);
-      })
-    }
-    function getTemplate(file, callback) {
-        $.ajax(file, {
-            type: 'GET',
-            success: function(data, textStatus, xhr) {
-              return callback(null, data);
-            },
-            error: function(xhr, textStatus, error) {
-              return callback(error);
-            }
-        });
-    }
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77097265-1', 'auto');
+  ga('send', 'pageview');
+
   </script>
   <link rel="stylesheet" href="/components/font-awesome/css/font-awesome.min.css">
   <script async src="/js/share.js"></script>
