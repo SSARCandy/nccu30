@@ -32,17 +32,24 @@ a {
 }
 
 @media only screen and (min-width: 301px) {
-	.video-container {
+	.video-container.speech {
+		margin-bottom: 10px;
+	}
+	.video-container.youtube {
 		margin-bottom: 10px;
 	}
 }
 
 @media only screen and (min-width: 601px) {
-	.video-container {
+	.video-container.speech {
 		padding-bottom: 24%;
 		width: 45%;
 		margin: 2%;
 		display: inline-block;
+	}
+	.video-container.youtube {
+		padding-bottom: 46%;
+		margin: 0 0 3% 5px;
 	}
 }
 
