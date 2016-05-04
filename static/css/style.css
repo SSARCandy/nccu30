@@ -356,7 +356,7 @@ nav ul a:hover {
 	}
 }
 
-.hvr-icon-wobble-horizontal {
+.hvr-icon-forward {
 	vertical-align: middle;
 	-webkit-transform: translateZ(0);
 	transform: translateZ(0);
@@ -366,11 +366,11 @@ nav ul a:hover {
 	-moz-osx-font-smoothing: grayscale;
 	position: relative;
 	padding-right: 2.2em;
-	-webkit-transition-duration: 0.3s;
-	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.1s;
+	transition-duration: 0.1s;
 }
 
-.hvr-icon-wobble-horizontal:before {
+.hvr-icon-forward:before {
 	content: "\f061";
 	position: absolute;
 	right: 0.8em;
@@ -378,17 +378,17 @@ nav ul a:hover {
 	font-family: FontAwesome;
 	-webkit-transform: translateZ(0);
 	transform: translateZ(0);
+	-webkit-transition-duration: 0.1s;
+	transition-duration: 0.1s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
 }
 
-.hvr-icon-wobble-horizontal:hover:before,
-.hvr-icon-wobble-horizontal:focus:before,
-.hvr-icon-wobble-horizontal:active:before {
-	-webkit-animation-name: hvr-icon-wobble-horizontal;
-	animation-name: hvr-icon-wobble-horizontal;
-	-webkit-animation-duration: 1s;
-	animation-duration: 1s;
-	-webkit-animation-timing-function: ease-in-out;
-	animation-timing-function: ease-in-out;
-	-webkit-animation-iteration-count: 1;
-	animation-iteration-count: 1;
+.hvr-icon-forward:hover:before,
+.hvr-icon-forward:focus:before,
+.hvr-icon-forward:active:before {
+	-webkit-transform: translateX(4px);
+	transform: translateX(4px);
 }
