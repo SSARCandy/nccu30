@@ -14,8 +14,10 @@
 ~$ npm run dev
 ```
 
-app will listen at `localhost:3020`
+app will listen at `localhost:3210`
 
+### Images
+all images put in `static/`, thumbnails put in `static/thumbnails/`, you can use [QuickThumb](https://github.com/zivester/node-quickthumb) to generate thumbnails.
 
 ### Code style
 

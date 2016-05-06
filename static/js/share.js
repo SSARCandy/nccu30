@@ -64,7 +64,6 @@ function getTemplate(file, callback) {
 
 $(document).ready(function (e) {
 	$(".button-collapse").sideNav({
-		menuWidth: '85%',
 		closeOnClick: true
 	});
 
