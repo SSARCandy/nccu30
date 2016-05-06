@@ -63,11 +63,16 @@
 </div>
 
 <script>
+
+  
+  var photos = $(".photos");
   if ($(window).width() < 600) {
-    var photos = $(".photos");
     photos = photos.slice(0, 10);
-    $("#gallery").html($(photos));
   }
+  if (photos.length > 30) {
+    photos = photos.slice(0, 30);    
+  }
+  $("#gallery").html($(photos));
   
   $('#gallery')
     .justifiedGallery({

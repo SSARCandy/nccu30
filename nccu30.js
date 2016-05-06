@@ -56,8 +56,7 @@ router.get('/speech/:speech/youtube', function* () {
 
 router.get('/speech/:speech', function* () {
   const template = fs.readFileSync(__dirname + '/views/index.html', 'utf-8');
-  const imgs = getFileList(__dirname + config.galleryUrl + this.params.speech, this.params.speech);
-  console.log(this.params.speech, imgs);
+  const imgs = shuffle(getFileList(__dirname + config.galleryUrl + this.params.speech, this.params.speech));
   const covers = imgs.filter((img) => { return img.indexOf('cover') !== -1; });
   const speechDetails = speechlist[parseInt(this.params.speech, 10) - 1];
 
@@ -90,4 +89,14 @@ function getFileList(dir, num) {
     results.push(`/images/gallery/${num}/${file}`);
   });
   return results;
+}
+
+function shuffle(a) {
+  var j, x, i;
+  for (i = a.length; i; i -= 1) {
+    j = Math.floor(Math.random() * i);
+    x = a[i - 1];
+    a[i - 1] = a[j];
+    a[j] = x;
+  }
 }
