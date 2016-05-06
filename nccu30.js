@@ -55,8 +55,10 @@ router.get('/speech/:speech/youtube', function* () {
 });
 
 router.get('/speech/:speech', function* () {
+  var imgs = getFileList(__dirname + config.galleryUrl + this.params.speech, this.params.speech);
+  shuffle(imgs);
+
   const template = fs.readFileSync(__dirname + '/views/index.html', 'utf-8');
-  const imgs = shuffle(getFileList(__dirname + config.galleryUrl + this.params.speech, this.params.speech));
   const covers = imgs.filter((img) => { return img.indexOf('cover') !== -1; });
   const speechDetails = speechlist[parseInt(this.params.speech, 10) - 1];
 
