@@ -19,13 +19,15 @@
   </div>
   <div class="left-align" style="background-color:#ECEFF1;">
     <div class="row container" style="padding: 30px 0;">
-      <h5 style="margin:0; padding: 15px 0;">關於講者</h5>
+      <h5 style="margin:0; padding: 15px 0;"><%=speechDetails.details.aboutSpeecher.title%></h5>
       <div class="col s12 m4 center-sm">
         <img src="<%=speechDetails.details.head%>" class="circle responsive-img" style="height:110px; border:2px solid #BDBDBD;">
       </div>
       <div class="col s12 m7" style="margin-bottom: 10px;">
-        Commodo nunc quis nisi cras metus au. Nisi risus orci nulla cras. Vel consectetur dictum sagittis. Justo enim auctor vulputate
-        et, nisl lacinia massa ante.
+        <% speechDetails.details.aboutSpeecher.desc.forEach(function(d) {%>
+          <%=d%>
+            <br/>
+          %})%>
       </div>
     </div>
   </div>
@@ -40,7 +42,7 @@
     <h5 style="margin:0; padding: 15px 0;">照片回顧</h5>
     <div id="gallery">
       <% img.forEach(function(i) {%>
-        <a class="photos" href="<%=i%>"> <img src="<%=i%>"> </a>
+        <a class="photos" href="<%=i%>"> <img src="/thumbnails<%=i%>"> </a>
         <% }) %>
     </div>
   </div>
@@ -77,4 +79,5 @@
     .on('jg.complete', function() {
       $('#gallery a').swipebox();
     });
+
 </script>
