@@ -181,6 +181,12 @@ nav .nav-wrapper {
 		margin: 0;
 		padding: 15px 0;
 	}
+	h5.rwd {
+		font-size: 24px;
+	}
+	h6.rwd {
+		font-size: 18px;
+	}
 }
 
 @media only screen and (min-width: 601px) {
@@ -242,11 +248,26 @@ nav .nav-wrapper {
 	.speech-name {
 		text-align: left;
 	}
+	h5.rwd {
+		font-size: 30px;
+	}
+	h6.rwd {
+		font-size: 24px;
+	}
 }
 
 @media only screen and (min-width: 1401px) {
 	.home-banner {
 		padding-top: 12%;
+	}
+	h5.rwd {
+		font-size: 36px;
+	}
+	h6.rwd {
+		font-size: 28px;
+	}
+	.speech-list-img {
+		height: 450px;
 	}
 }
 
