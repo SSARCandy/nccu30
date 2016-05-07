@@ -51,25 +51,17 @@ a {
 		padding-bottom: 46%;
 		margin: 0 0 3% 5px;
 	}
-	.row .col.speech-avatar {
-		padding-top: 17%;
-	}
 }
 
 @media only screen and (min-width: 993px) {
 	.container {
 		width: 85%;
 	}
-}
-
-@media only screen and (min-width: 800px) {
 	.row .col.speech-avatar {
-		padding-top: 10%;
-	}
-}
-
-@media only screen and (min-width: 1050px) {
-	.row .col.speech-avatar {
-		padding-top: 3.5%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 160px;
+		padding-top: 0;
 	}
 }
