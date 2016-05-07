@@ -176,6 +176,11 @@ nav .nav-wrapper {
 		border-radius: 8px;
 		margin-top: 10px;
 	}
+	.speech-name {
+		text-align: center;
+		margin: 0;
+		padding: 15px 0;
+	}
 }
 
 @media only screen and (min-width: 601px) {
@@ -233,6 +238,9 @@ nav .nav-wrapper {
 	}
 	.see-more {
 		margin-top: 20px;
+	}
+	.speech-name {
+		text-align: left;
 	}
 }
 
