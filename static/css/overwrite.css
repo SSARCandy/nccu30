@@ -38,6 +38,9 @@ a {
 	.video-container.youtube {
 		margin-bottom: 10px;
 	}
+	.slider .slides li img.home-image {
+		background-position: 90% 0;
+	}
 }
 
 @media only screen and (min-width: 601px) {
@@ -50,6 +53,9 @@ a {
 	.video-container.youtube {
 		padding-bottom: 46%;
 		margin: 0 0 3% 5px;
+	}
+	.slider .slides li img.home-image {
+		background-position: 50% 0;
 	}
 }
 
