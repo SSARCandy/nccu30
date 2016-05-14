@@ -102,7 +102,7 @@ nav .nav-wrapper {
 .home-banner {
 	position: absolute;
 	z-index: 2;
-	bottom: 20%;
+	bottom: 28%;
 	width: 100%;
 }
 
@@ -125,6 +125,7 @@ nav .nav-wrapper {
 		height: 54px;
 		line-height: 54px;
 		font-size: 1.1rem;
+		border-radius: 20px;
 	}
 	.speech-list-img {
 		height: 200px;
@@ -204,6 +205,7 @@ nav .nav-wrapper {
 	.btn.home {
 		margin: 0 20px;
 		width: 200px;
+		font-size: 1.3rem;
 	}
 	.speech-list-img {
 		height: 400px;
@@ -258,7 +260,7 @@ nav .nav-wrapper {
 
 @media only screen and (min-width: 1401px) {
 	.home-banner {
-		padding-top: 12%;
+		bottom: 30%;
 	}
 	h5.rwd {
 		font-size: 36px;
@@ -268,6 +270,9 @@ nav .nav-wrapper {
 	}
 	.speech-list-img {
 		height: 450px;
+	}
+	.btn.home {
+		margin-right: 4%;
 	}
 }
 
