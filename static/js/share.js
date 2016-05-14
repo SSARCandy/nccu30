@@ -86,7 +86,7 @@ function init() {
 
 	$('.slider.home').slider({
 		full_width: true,
-		height: $(window).height() - 64,
+		height: $(window).height() - 56,
 		indicators: false,
 		// interval: 10000,
 	});
