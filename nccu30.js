@@ -10,7 +10,7 @@ const _ = require('lodash')
 const fs = require('fs')
 const ejs = require('ejs')
 const http = require('http')
-const speechlist = require('./data/speechlist.js').reverse();
+const speechlist = require('./data/speechlist.js');
 const config = require('./config.js');
 
 
