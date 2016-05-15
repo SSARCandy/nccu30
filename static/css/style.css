@@ -129,7 +129,7 @@ nav .nav-wrapper {
 		height: 54px;
 		line-height: 54px;
 		font-size: 1.1rem;
-		/*border-radius: 20px;*/
+		border-radius: 8px;
 	}
 	.speech-list-img {
 		height: 200px;
@@ -307,6 +307,11 @@ nav ul a:hover {
 .cover-filter {
 	filter: brightness(50%);
 	-webkit-filter: brightness(50%);
+}
+
+.home-image {
+	filter: brightness(70%);
+	-webkit-filter: brightness(70%);
 }
 
 .fixed-text {
