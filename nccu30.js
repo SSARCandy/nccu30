@@ -1,17 +1,18 @@
 'use strict'
 
-require('babel-core/register')
-const koa = require('koa')
-const compress = require('koa-compress')
-const app = koa()
-const router = require('koa-router')()
-const Promise = require('bluebird')
-const _ = require('lodash')
-const fs = require('fs')
-const ejs = require('ejs')
-const http = require('http')
+require('babel-core/register');
+const koa        = require('koa');
+const compress   = require('koa-compress');
+const app        = koa();
+const router     = require('koa-router')();
+const Promise    = require('bluebird');
+const _          = require('lodash');
+const fs         = require('fs');
+const ejs        = require('ejs');
+const http       = require('http');
+
 const speechlist = require('./data/speechlist.js');
-const config = require('./config.js');
+const config     = require('./config/config.js');
 
 
 // logger
@@ -25,7 +26,7 @@ app.use(function* (next) {
 app.use(compress({
   threshold: 2048,
   flush: require('zlib').Z_SYNC_FLUSH
-}))
+}));
 
 router.get('/:tab', function* () {
   const template = fs.readFileSync(__dirname + '/views/index.html', 'utf-8');
@@ -37,7 +38,7 @@ router.get('/:tab', function* () {
     speechlist: speechlist,
     partialUrl: 'partial/' + tab + '.html'
   });
-})
+});
 
 router.get('/speech/:speech/youtube', function* () {
   const template = fs.readFileSync(__dirname + '/views/index.html', 'utf-8');
