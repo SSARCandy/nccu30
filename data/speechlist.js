@@ -135,7 +135,9 @@ module.exports = [{
                 '他要改變、改變台灣、改變文化'
             ]
         },
-        youtube: []
+        youtube: [
+            'ss7f-uBbWdE'
+        ]
     }
 }, {
     name: '李開復談世界觀',
