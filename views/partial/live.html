@@ -1,9 +1,26 @@
-<div>
+<!--<div class="live-layout">
   <% speechlist.reverse().forEach(function(s) {  %>
     <% if (s.details.youtube.length) {%>
-    <div class="video-container" style="margin-bottom:10px;">
+    <div class="video-container live" style="margin-bottom:10px;">
       <iframe src="https://www.youtube.com/embed/<%=s.details.youtube[0]%>" frameborder="0" allowfullscreen></iframe>
     </div>
     <% } %>
   <% }) %>
-</div>
+</div>-->
+
+<ul class="live-layout">
+  <% speechlist.forEach(function(s) {  %>
+    <li class="live-list" onclick="goto('<%=s.url%>/youtube')">
+      <div class="live-item">
+        <div class="live-item-img-container ">
+            <img class="responsive-img dark-filter live-item-img" src="<%=s.cover%>">
+        </div>
+        <div class="live-item-details">
+          <h5><%=s.name%></h5>
+          <div><%=s.details.aboutSpeecher.title%></div>
+          <div>政大三十大講堂 NO.<%=s.url.split('/')[2]%></div>
+        </div>
+      </div>
+    </li>
+    <% }) %>
+</ul>
