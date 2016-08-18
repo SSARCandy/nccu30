@@ -1,6 +1,6 @@
 module.exports = [{
     name: '從姚明的高度看世界',
-    speecher: '姚明X別蓮蒂',
+    speecher: '姚明 X 別蓮蒂',
     cover: 'images/gallery/1/cover.jpg',
     url: '/speech/1',
     details: {
@@ -26,7 +26,7 @@ module.exports = [{
     }
 }, {
     name: '為土地種一個希望',
-    speecher: '嚴長壽X司徒達賢X沈方正',
+    speecher: '嚴長壽 X 司徒達賢 X 沈方正',
     cover: 'images/gallery/2/cover.jpg',
     url: '/speech/2',
     details: {
@@ -53,7 +53,7 @@ module.exports = [{
     }
 }, {
     name: '貨幣戰爭',
-    speecher: '宋鴻兵X謝金河',
+    speecher: '宋鴻兵 X 謝金河',
     cover: 'images/gallery/3/cover.jpg',
     url: '/speech/3',
     details: {
@@ -73,7 +73,7 @@ module.exports = [{
     }
 }, {
     name: '我是歌手的心路歷程',
-    speecher: '彭佳慧X別蓮蒂',
+    speecher: '彭佳慧 X 別蓮蒂',
     cover: 'images/gallery/4/cover.jpg',
     url: '/speech/4',
     details: {
@@ -100,7 +100,7 @@ module.exports = [{
     }
 }, {
     name: '挑戰，引領時代',
-    speecher: '尹衍樑X謝金河',
+    speecher: '尹衍樑 X 謝金河',
     cover: 'images/gallery/5/cover.jpg',
     url: '/speech/5',
     details: {
@@ -121,7 +121,7 @@ module.exports = [{
     }
 }, {
     name: '改變，從台北開始',
-    speecher: '柯文哲X謝金河',
+    speecher: '柯文哲 X 謝金河',
     cover: 'images/gallery/6/cover.jpg',
     url: '/speech/6',
     details: {
@@ -141,7 +141,7 @@ module.exports = [{
     }
 }, {
     name: '李開復談世界觀',
-    speecher: '李開復X苑守慈',
+    speecher: '李開復 X 苑守慈',
     cover: 'images/gallery/7/cover.jpg',
     url: '/speech/7',
     details: {
@@ -162,7 +162,7 @@ module.exports = [{
     }
 }, {
     name: '預見與遇見—用創作與未來對話',
-    speecher: '林奕華X楊欣芳',
+    speecher: '林奕華 X 楊欣芳',
     cover: 'images/gallery/8/cover.jpg',
     url: '/speech/8',
     details: {
