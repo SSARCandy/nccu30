@@ -1,0 +1,9 @@
+<div>
+  <% speechlist.reverse().forEach(function(s) {  %>
+    <% if (s.details.youtube.length) {%>
+    <div class="video-container" style="margin-bottom:10px;">
+      <iframe src="https://www.youtube.com/embed/<%=s.details.youtube[0]%>" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <% } %>
+  <% }) %>
+</div>
