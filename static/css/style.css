@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
 html,
 body {
     /*margin: 0;*/
@@ -39,6 +40,10 @@ main {
     padding: 2px 15px;
     font-size: 18px;
     line-height: 20px;
+}
+
+.noto-text {
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 li .nav-span {
@@ -109,11 +114,8 @@ nav .nav-wrapper {
     .home-banner.face {
         bottom: 0%;
     }
-    h3 {
-        font-size: 1.7rem;
-    }
     .slider .slides li .caption {
-        top: 15%;
+        top: 0%;
         left: 5%;
         width: 90%;
     }
@@ -121,8 +123,6 @@ nav .nav-wrapper {
         top: 5%;
     }
     .btn.home {
-        /*margin: 5px 20px;*/
-        /*padding: 0 10px;*/
         width: 100%;
         height: 54px;
         line-height: 54px;
@@ -185,12 +185,6 @@ nav .nav-wrapper {
         margin: 0;
         padding: 15px 0;
     }
-    h5.rwd {
-        font-size: 20px;
-    }
-    h6.rwd {
-        font-size: 16px;
-    }
 }
 
 @media only screen and (min-width: 601px) {
@@ -207,8 +201,8 @@ nav .nav-wrapper {
         font-size: 2.92rem;
     }
     .slider .slides li .caption {
-        top: 15%;
-        left: 10%;
+        top: 27%;
+        left: 6%;
         width: 80%;
     }
     .slider .slides li .caption.speech {
@@ -263,12 +257,6 @@ nav .nav-wrapper {
     .speech-name {
         text-align: left;
     }
-    h5.rwd {
-        font-size: 30px;
-    }
-    h6.rwd {
-        font-size: 24px;
-    }
 }
 
 @media only screen and (min-width: 1401px) {
@@ -278,9 +266,11 @@ nav .nav-wrapper {
         bottom: 15%;
         width: 100%;
     }
-    /*.home-banner.face {
-        bottom: 5%;
-    }*/
+    .slider .slides li .caption {
+        top: 33%;
+        left: 8%;
+        width: 80%;
+    }
     h5.rwd {
         font-size: 36px;
     }
@@ -384,6 +374,33 @@ nav ul a:hover {
     }
     .float-container.about {
         width: 1200px;
+    }
+}
+
+@keyframes hvr-icon-wobble-horizontal {
+    16.65% {
+        -webkit-transform: translateX(6px);
+        transform: translateX(6px);
+    }
+    33.3% {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    49.95% {
+        -webkit-transform: translateX(4px);
+        transform: translateX(4px);
+    }
+    66.6% {
+        -webkit-transform: translateX(-2px);
+        transform: translateX(-2px);
+    }
+    83.25% {
+        -webkit-transform: translateX(1px);
+        transform: translateX(1px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
     }
 }
 

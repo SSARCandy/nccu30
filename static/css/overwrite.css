@@ -10,9 +10,6 @@ a {
     cursor: pointer;
 }
 
-
-/* Let's get this party started */
-
 ::-webkit-scrollbar {
     width: 0px;
 }
@@ -41,6 +38,21 @@ a {
     .slider .slides li img.home-image {
         background-position: 90% 0;
     }
+    h3.rwd {
+        font-size: 1.7rem;
+    }
+    h4.rwd {
+        font-size: 1.5rem;
+    }
+    h5.rwd {
+        font-size: 1.3rem;
+    }
+    h6.rwd {
+        font-size: 1.1rem;
+    }
+    hr.rwd {
+        margin-right: 0;
+    }
 }
 
 @media only screen and (min-width: 601px) {
@@ -56,6 +68,21 @@ a {
     }
     .slider .slides li img.home-image {
         background-position: 50% 0;
+    }
+    h3.rwd {
+        font-size: 2.7rem;
+    }
+    h4.rwd {
+        font-size: 2.4rem;
+    }
+    h5.rwd {
+        font-size: 2.1rem;
+    }
+    h6.rwd {
+        font-size: 1.7rem;
+    }
+    hr.rwd {
+        margin-right: 55%;
     }
 }
 
