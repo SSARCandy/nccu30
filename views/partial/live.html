@@ -16,11 +16,12 @@
             <img class="responsive-img dark-filter live-item-img" src="<%=s.cover%>">
         </div>
         <div class="live-item-details">
-          <h5><%=s.name%></h5>
-          <div><%=s.details.aboutSpeecher.title%></div>
-          <div>政大三十大講堂 NO.<%=s.url.split('/')[2]%></div>
+          <div class="live-name"><%=s.name%></div>
+          <div class="live-title"><%=s.details.aboutSpeecher.title%></div>
+          <div class="live-desc">政大三十大講堂 NO.<%=s.url.split('/')[2]%></div>
         </div>
       </div>
     </li>
+    <hr>
     <% }) %>
 </ul>
