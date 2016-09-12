@@ -529,17 +529,22 @@ nav ul a:hover {
     margin: 10px 20px;
 }
 
-.live-item-img {
-    /*max-height: 230px;*/
-}
-
 .live-name{
     font-size: 26px;
     font-weight: 600;
+    color: initial;
+}
+
+.live-title {
+    color: initial;
+}
+
+.live-desc {
+    color: initial;
 }
     
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 900px) {
     .live-item {
         display: block; 
     }
@@ -557,7 +562,6 @@ nav ul a:hover {
         width: 95%;
         margin-top: 10px;
     }
-
 }
 
 
