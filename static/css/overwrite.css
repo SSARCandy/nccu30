@@ -84,6 +84,9 @@ a {
     hr.rwd {
         margin-right: 55%;
     }
+    .broadcast-text {
+        margin-top: 2.5rem;
+    }
 }
 
 @media only screen and (min-width: 993px) {
