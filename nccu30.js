@@ -51,6 +51,7 @@ router.get('/speech/:speech/youtube', function* () {
   this.body = ejs.render(template, {
     covers: covers,
     filename: __dirname + '/views/index.html',
+    newSpeech: null,
     speechDetails: speechDetails,
     tab: 'speech',
     partialUrl: 'partial/speechvideolist.html'
@@ -69,6 +70,7 @@ router.get('/speech/:speech', function* () {
     img: imgs,
     covers: covers,
     filename: __dirname + '/views/index.html',
+    newSpeech: null,
     speechDetails: speechDetails,
     tab: 'speech',
     partialUrl: 'partial/speech.html'
