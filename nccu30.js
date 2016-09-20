@@ -12,6 +12,7 @@ const ejs        = require('ejs');
 const http       = require('http');
 
 const speechlist = require('./data/speechlist.js');
+const newSpeech  = require('./data/newestSpeech.js');
 const config     = require('./config/config.js');
 
 
@@ -36,6 +37,7 @@ router.get('/:tab', function* () {
     filename: __dirname + '/views/index.html',
     tab: tab,
     speechlist: speechlist,
+    newSpeech: newSpeech,
     partialUrl: 'partial/' + tab + '.html'
   });
 });
