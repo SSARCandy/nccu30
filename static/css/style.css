@@ -1,8 +1,17 @@
-@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+/* @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css); */
+
+@font-face {
+    font-family: 'flopdesign';
+    src: url('../font/flopdesign-kana.eot');
+    src: url('../font/flopdesign-kana.eot?#iefix') format('embedded-opentype'),
+    url('../font/flopdesign-kana.woff') format('woff'),
+    url('../font/flopdesign-kana.ttf') format('truetype');
+}
+
 html,
 body {
     /*margin: 0;*/
-    font-family: 'PingFang TC', sans-serif, 微軟正黑體;
+    font-family: "flopdesign", 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku  Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS P','PingFang TC', sans-serif, 微軟正黑體 !important;
     width: 100vw;
     overflow-x: hidden;
     font-weight: 300;
@@ -23,7 +32,7 @@ main {
     position: relative;
     height: 100%;
     /* padding: 30px;
-	padding-bottom: 0; */
+    padding-bottom: 0; */
 }
 
 .navbar-default .navbar-nav> .active> a,
@@ -42,9 +51,9 @@ main {
     line-height: 20px;
 }
 
-.noto-text {
+/* .noto-text {
     font-family: 'Noto Sans TC', sans-serif;
-}
+} */
 
 li .nav-span {
     font-size: 18px;
@@ -514,7 +523,7 @@ nav ul a:hover {
 }
 
 .live-item {
-    display: flex; 
+    display: flex;
     /*height: 230px;*/
     cursor: pointer;
 }
@@ -529,7 +538,7 @@ nav ul a:hover {
     margin: 10px 20px;
 }
 
-.live-name{
+.live-name {
     font-size: 26px;
     font-weight: 600;
     color: initial;
@@ -542,28 +551,23 @@ nav ul a:hover {
 .live-desc {
     color: initial;
 }
-    
 
 @media only screen and (max-width: 900px) {
     .live-item {
-        display: block; 
+        display: block;
     }
-
     .live-item-img-container {
         width: 100%;
     }
-
     .live-item-details {
         width: 100%;
         margin: 20px 10px;
     }
-    
     .live-layout {
         width: 95%;
         margin-top: 10px;
     }
 }
-
 
 @media only screen and (min-width: 1600px) {
     .live {

@@ -1,5 +1,5 @@
 module.exports = {
-    title: '預見與遇見——',
+    title: '預見與遇見—',
     subtitle: '用創作與未來對話',
     speecher: '林奕華',
     cover: 'images/home/6.jpg',
