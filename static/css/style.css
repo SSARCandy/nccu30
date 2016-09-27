@@ -575,3 +575,9 @@ nav ul a:hover {
         display: inline-block;
     }
 }
+
+@media only screen and (min-width: 1400px) {
+    .about-container {
+        width: 50% !important;
+    }
+}
