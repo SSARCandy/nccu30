@@ -45,7 +45,7 @@ router.get('/:tab', function* () {
 router.get('/speech/:speech/youtube', function* () {
   const template = fs.readFileSync(__dirname + '/views/index.html', 'utf-8');
   const imgs = getFileList(__dirname + config.galleryUrl + this.params.speech, this.params.speech);
-  const covers = imgs.filter((img) => { return img.indexOf('cover') !== -1; });
+  const covers = imgs.filter((img) => ~img.indexOf('cover'));
   const speechDetails = speechlist[parseInt(this.params.speech, 10) - 1];
 
   this.body = ejs.render(template, {
@@ -60,11 +60,12 @@ router.get('/speech/:speech/youtube', function* () {
 
 router.get('/speech/:speech', function* () {
   var imgs = getFileList(__dirname + config.galleryUrl + this.params.speech, this.params.speech);
-  shuffle(imgs);
-
+  const covers = imgs.filter((img) => ~img.indexOf('cover'));
   const template = fs.readFileSync(__dirname + '/views/index.html', 'utf-8');
-  const covers = imgs.filter((img) => { return img.indexOf('cover') !== -1; });
   const speechDetails = speechlist[parseInt(this.params.speech, 10) - 1];
+
+  imgs = imgs.filter((img) => !~img.indexOf('cover'));
+  shuffle(imgs);
 
   this.body = ejs.render(template, {
     img: imgs,
