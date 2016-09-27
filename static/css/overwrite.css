@@ -90,14 +90,18 @@ a {
 }
 
 @media only screen and (min-width: 993px) {
-    .container {
-        width: 50%;
-    }
+
     .row .col.speech-avatar {
         display: flex;
         align-items: center;
         justify-content: center;
         min-height: 180px;
         padding-top: 0;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .container {
+        width: 70%;
     }
 }
