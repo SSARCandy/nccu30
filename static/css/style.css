@@ -112,7 +112,7 @@ nav .nav-wrapper {
     border-width: 4px;
 }
 
-@media only screen and (min-width: 301px) {
+@media only screen and (min-width: 101px) {
     .home-banner {
         position: absolute;
         z-index: 2;
@@ -228,7 +228,7 @@ nav .nav-wrapper {
         transform: translateZ(0);
     }
     .speech-list-text {
-        width: 40%;
+        width: 100%;
         padding: 150px 0 0 20px;
         align-items: flex-start;
         -webkit-align-items: flex-start;

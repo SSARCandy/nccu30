@@ -28,7 +28,7 @@ a {
     height: 100%;
 }
 
-@media only screen and (min-width: 301px) {
+@media only screen and (min-width: 101px) {
     .video-container.speech {
         margin-bottom: 10px;
     }
