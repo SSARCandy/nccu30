@@ -8,6 +8,7 @@
   </div>
   <div class="container">
     <h5 style="margin:0; padding: 15px 0;">現場轉播</h5>
+    <% if (speechDetails.details.youtube.length === 0) {%>暫無現場轉播資料，敬請期待！<%}%>
     <% speechDetails.details.youtube.forEach(function(v, i) {%>
       <div class="video-container youtube">
         <iframe width="600" height="400" src="https://www.youtube.com/embed/<%=v%>" frameborder="0" allowfullscreen></iframe>
