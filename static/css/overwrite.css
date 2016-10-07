@@ -28,6 +28,11 @@ a {
     height: 100%;
 }
 
+.valign-wrapper{
+    display: block;
+    text-align: left;
+}
+
 @media only screen and (min-width: 101px) {
     .video-container.speech {
         margin-bottom: 10px;
