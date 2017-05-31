@@ -35,6 +35,7 @@ router.get('/:tab', function* () {
 
   this.body = ejs.render(template, {
     filename: __dirname + '/views/index.html',
+    hideNewSpeech: config.hideNewSpeech,
     tab: tab,
     speechlist: speechlist,
     newSpeech: newSpeech,

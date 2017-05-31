@@ -38,41 +38,55 @@
             <i class="fa fa-bars black-text" style="line-height: 64px; font-size: 1.3rem;"></i>
           </a>
           <ul class="right hide-on-med-and-down">
+            <li class="hvr-underline-reveal <% if (tab === 'home') {%> active <%}%>">
+              <a class="nav-span black-text" href="/home">首頁</a>
+            </li>
             <li class="hvr-underline-reveal <% if (tab === 'about') {%> active <%}%>">
               <a class="nav-span black-text" href="/about">關於我們</a>
             </li>
-            <li class="hvr-underline-reveal <% if (tab.indexOf('home') !== -1) {%> active <%}%>">
-              <a class="nav-span black-text" href="/home">最新講座</a>
+            <% if(!hideNewSpeech) { %>
+            <li class="hvr-underline-reveal <% if (tab.indexOf('new') !== -1) {%> active <%}%>">
+              <a class="nav-span black-text" href="/new">最新講座</a>
             </li>
+            <% } %>
             <li class="hvr-underline-reveal <% if (tab.indexOf('speech') !== -1) {%> active <%}%>">
               <a class="nav-span black-text" href="/speechlist">精彩回顧</a>
             </li>
             <li class="hvr-underline-reveal <% if (tab.indexOf('live') !== -1) {%> active <%}%>">
-              <a class="nav-span black-text" href="/live">現場轉播</a>
+              <a class="nav-span black-text" href="/live">影音專區</a>
             </li>
+            <% if(!hideNewSpeech) { %>
             <li class="hvr-underline-reveal <% if (tab === 'signup') {%> active <%}%>">
               <a class="nav-span black-text" href="/signup">搶先報名</a>
             </li>
+            <% } %>
             <li class="hvr-underline-reveal <% if (tab === 'contact') {%> active <%}%>">
               <a class="nav-span black-text" href="/contact">聯絡我們</a>
             </li>
           </ul>
           <ul class="side-nav" id="mobile-demo">
+            <li class="<% if (tab === 'home') {%> active <%}%>">
+              <a class="nav-span black-text" href="/home">首頁</a>
+            </li>
             <li class="<% if (tab === 'about') {%> active <%}%>">
               <a class="nav-span black-text" href="/about">關於我們</a>
             </li>
-            <li class="<% if (tab === 'home') {%> active <%}%>">
-              <a class="nav-span black-text" href="/home">最新講座</a>
+            <% if(!hideNewSpeech) { %>
+            <li class="<% if (tab === 'new') {%> active <%}%>">
+              <a class="nav-span black-text" href="/new">最新講座</a>
             </li>
+            <% } %>
             <li class="<% if (tab.indexOf('speech') !== -1) {%> active <%}%>">
               <a class="nav-span black-text" href="/speechlist">精彩回顧</a>
             </li>
             <li class="<% if (tab.indexOf('live') !== -1) {%> active <%}%>">
-              <a class="nav-span black-text" href="/live">現場轉播</a>
+              <a class="nav-span black-text" href="/live">影音專區</a>
             </li>
+            <% if(!hideNewSpeech) { %>
             <li class="<% if (tab === 'signup') {%> active <%}%>">
               <a class="nav-span black-text" href="/signup">搶先報名</a>
             </li>
+            <% } %>
             <li class="<% if (tab === 'contact') {%> active <%}%>">
               <a class="nav-span black-text" href="/contact">聯絡我們</a>
             </li>
