@@ -95,10 +95,10 @@ if (photos.length > 30) {
 $("#gallery").html($(photos));
 $('#gallery')
   .justifiedGallery({
-    lastRow: 'nojustify',
+    lastRow: 'hide',
     rowHeight: 100,
     rel: 'gallery2',
-    margins: 1
+    margins: 1,
   })
   .on('jg.complete', function() {
     $('#gallery a').swipebox();
