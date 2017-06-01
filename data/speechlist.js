@@ -1,6 +1,7 @@
 module.exports = [{
     name: '從姚明的高度看世界',
     speecher: '姚明',
+    hoster: '別蓮蒂',
     date: '2012.10.26',
     place: '政大藝文中心 大禮堂',
     cover: 'images/gallery/1/cover.jpg',
@@ -31,7 +32,8 @@ module.exports = [{
     }
 }, {
     name: '為土地種一個希望',
-    speecher: '嚴長壽',
+    speecher: '嚴長壽 X 司徒達賢',
+    hoster: '沈方正',
     date: '2013.03.20',
     place: '政大藝文中心 大禮堂',
     cover: 'images/gallery/2/cover.jpg',
@@ -72,6 +74,7 @@ module.exports = [{
 }, {
     name: '貨幣戰爭',
     speecher: '宋鴻兵',
+    hoster: '謝金河',
     date: '2013.04.03',
     place: '政大藝文中心 大禮堂',
     cover: 'images/gallery/3/cover.jpg',
@@ -101,6 +104,7 @@ module.exports = [{
 }, {
     name: '我是歌手的心路歷程',
     speecher: '彭佳慧',
+    hoster: '別蓮蒂',
     date: '2013.05.15',
     place: '政大藝文中心 大禮堂',
     cover: 'images/gallery/4/cover.jpg',
@@ -135,6 +139,7 @@ module.exports = [{
 }, {
     name: '挑戰，引領時代',
     speecher: '尹衍樑',
+    hoster: '謝金河',
     date: '2013.12.12',
     place: '政大藝文中心 大禮堂',
     cover: 'images/gallery/5/cover.jpg',
@@ -164,6 +169,7 @@ module.exports = [{
 }, {
     name: '改變，從台北開始',
     speecher: '柯文哲',
+    hoster: '謝金河',
     date: '2015.05.26',
     place: '政大藝文中心 大禮堂',
     cover: 'images/gallery/6/cover.jpg',
@@ -193,6 +199,7 @@ module.exports = [{
 }, {
     name: '李開復談世界觀',
     speecher: '李開復',
+    hoster: '苑守慈',
     date: '2015.06.01',
     place: '政大藝文中心 大禮堂',
     cover: 'images/gallery/7/cover.jpg',
@@ -220,6 +227,7 @@ module.exports = [{
 }, {
     name: '預見與遇見',
     speecher: '林奕華',
+    hoster: '楊欣芳',
     date: '2016.05.10',
     place: '政大藝文中心 大禮堂',
     cover: 'images/gallery/8/cover.jpg',
