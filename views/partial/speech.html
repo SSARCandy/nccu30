@@ -7,24 +7,49 @@
           <div class="caption speech left-align fixed-text">
             <h3><%=speechDetails.name%></h3>
             <h5 class="flow-text light grey-text text-lighten-3"><%=speechDetails.details.slogan%></h5>
+            <h6><%=speechDetails.date%></h6>
+            <h6><%=speechDetails.place%></h6>
           </div>
         </li>
         <%})%>
     </ul>
   </div>
   <div class="left-align" style="background-color:#ECEFF1;">
-    <div class="row container" style="padding: 30px 0;">
-      <h5 class="speech-name"><%=speechDetails.details.aboutSpeecher.title%></h5>
-      <div class="col s12 l4 center-align speech-avatar">
-        <img src="<%=speechDetails.details.head%>" class="circle responsive-img" style="border:2px solid #BDBDBD;">
+
+    <!--speecher intro-->
+    <% speechDetails.details.aboutSpeecher.forEach(function(s) {  %>
+      <div class="row container" style="padding: 30px 0;">
+        <div class="row">
+          <div class="col s12 l4" style="text-align:center">
+            <h5 class="speech-name"><%=s.title%></h5>
+          </div>
+          <div class="col s12 l8"></div>
+        </div>
+        <div class="col s12 l4 center-align speech-avatar">
+          <img src="<%=speechDetails.details.head%>" class="circle responsive-img" style="border:2px solid #BDBDBD;">
+        </div>
+        <div class="col s12 l8" style="margin-bottom: 10px; display: flex; align-items: center; min-height: 180px;">
+          <% s.desc.forEach(function(d) {%>
+            <%=d%>
+              <br/>
+              <%})%>
+        </div>
       </div>
-      <div class="col s12 l8" style="margin-bottom: 10px; display: flex; align-items: center; min-height: 180px;">
-        <% speechDetails.details.aboutSpeecher.desc.forEach(function(d) {%>
-          <%=d%>
-            <br/>
-            <%})%>
+    <%})%>
+
+    <!--hoster intro-->
+    <% speechDetails.details.aboutHoster.forEach(function(s) {  %>
+      <div class="row container" style="padding: 30px 0;">
+        <h5 class="speech-name"><%=s.title%></h5>
+        <div style="margin-bottom: 10px; display: flex; align-items: center; min-height: 180px;">
+          <% s.desc.forEach(function(d) {%>
+            <%=d%>
+              <br/>
+              <%})%>
+        </div>
       </div>
-    </div>
+    <%})%>
+
   </div>
   <div class="container caption" style="margin-top:40px; margin-bottom:30px;">
     <% speechDetails.details.desc.forEach(function(d) {%>
@@ -34,7 +59,7 @@
       <%})%>
   </div>
   <div class="container" style="margin-bottom:30px;">
-    <h5 style="speech-name">照片回顧</h5>
+    <h5 class="speech-name">照片回顧</h5>
     <div id="gallery">
       <% img.forEach(function(i) {%>
         <a class="photos" href="<%=i%>"> <img src="/thumbnails<%=i%>"> </a>
@@ -43,12 +68,14 @@
   </div>
   <% if (speechDetails.details.youtube.length){%>
     <div class="container" style="margin-bottom:30px;">
-      <h5 style="speech-name">相關影片</h5>
+      <h5 class="speech-name">相關影片</h5>
+      <div class="video-container-wrap">
       <% for (var i = 0; i < speechDetails.details.youtube.length && i < 2; i++) { %>
-        <div class="video-container speech" style="margin-bottom:10px;">
+        <div class="video-container speech" style="margin-bottom:10px; margin-left:auto; margin-right:auto;">
           <iframe src="https://www.youtube.com/embed/<%=speechDetails.details.youtube[i]%>" frameborder="0" allowfullscreen></iframe>
         </div>
-        <% } %>
+      <% } %>
+      </div>
           <br/>
           <a class="waves-effect waves-light btn hvr-icon-forward see-more" href="<%= speechDetails.url%>/youtube">
             看更多...

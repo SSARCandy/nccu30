@@ -61,6 +61,9 @@ a {
 }
 
 @media only screen and (min-width: 601px) {
+    .video-container-wrap{
+        display: flex;
+    }
     .video-container.speech {
         padding-bottom: 24%;
         width: 48%;
@@ -94,8 +97,18 @@ a {
     }
 }
 
-@media only screen and (min-width: 993px) {
+.row .col.speech-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 180px;
+    padding-top: 0;
+}
 
+@media only screen and (min-width: 993px) {
+    .video-container-wrap{
+        display: flex;
+    }
     .row .col.speech-avatar {
         display: flex;
         align-items: center;
@@ -106,6 +119,9 @@ a {
 }
 
 @media only screen and (min-width: 1400px) {
+    .video-container-wrap{
+        display: flex;
+    }
     .container {
         width: 70%;
     }
