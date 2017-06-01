@@ -581,3 +581,67 @@ nav ul a:hover {
         width: 50% !important;
     }
 }
+
+/** about.html 
+ *   sponsor graph
+ */
+
+ .sponsor-container {
+  max-width: 500px;
+  width: 300px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.pt1:before {
+  content: '';
+  position: absolute;
+  transform: translate(37px, 57px)rotate(60deg);
+  width: 9em;
+  height: .2em;
+  background: black;
+  z-index: -1;
+}
+
+.pt2:before {
+  content: '';
+  position: absolute;
+  transform: translate(39px, -59px)rotate(-60deg);
+  width: 9em;
+  height: .2em;
+  background: black;
+  z-index: -1;
+}
+
+.pt3:before {
+  content: '';
+  position: absolute;
+  transform: translate(-71px, 0px);
+  width: 9em;
+  height: .2em;
+  background: black;
+  z-index: -1;
+}
