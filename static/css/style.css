@@ -303,6 +303,11 @@ nav .nav-wrapper {
     text-shadow: 2px 2px 4px #000000;
 }
 
+.speech-list-text h7 {
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
 nav ul li.active {
     background-color: initial;
 }
