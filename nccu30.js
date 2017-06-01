@@ -50,6 +50,7 @@ router.get('/speech/:speech/youtube', function* () {
   const speechDetails = speechlist[parseInt(this.params.speech, 10) - 1];
 
   this.body = ejs.render(template, {
+    hideNewSpeech: config.hideNewSpeech,
     covers: covers,
     filename: __dirname + '/views/index.html',
     newSpeech: null,
@@ -69,6 +70,7 @@ router.get('/speech/:speech', function* () {
   shuffle(imgs);
 
   this.body = ejs.render(template, {
+    hideNewSpeech: config.hideNewSpeech,
     img: imgs,
     covers: covers,
     filename: __dirname + '/views/index.html',

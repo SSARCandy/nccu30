@@ -19,6 +19,7 @@
     "koa-compress": "^1.0.9",
     "koa-router": "^5.3.0",
     "koa-static": "^1.5.2",
-    "lodash": "^3.10.1"
+    "lodash": "^3.10.1",
+    "quickthumb": "0.0.12"
   }
 }

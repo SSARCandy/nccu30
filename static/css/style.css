@@ -112,6 +112,12 @@ nav .nav-wrapper {
     border-width: 4px;
 }
 
+.speech-list-img {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media only screen and (min-width: 101px) {
     .home-banner {
         position: absolute;
@@ -188,13 +194,14 @@ nav .nav-wrapper {
         border-radius: 8px;
         margin-top: 10px;
     }
-    .speech-name {
-        text-align: center;
-        margin: 0;
-        padding: 15px 0;
-    }
+
 }
 
+@media only screen and (min-width: 426px) {
+    .speech-list-img{
+        height: 300px;
+    }
+}
 @media only screen and (min-width: 601px) {
     .home-banner {
         position: absolute;
@@ -222,7 +229,7 @@ nav .nav-wrapper {
         font-size: 1.3rem;
     }
     .speech-list-img {
-        height: 400px;
+        height: 500px;
         margin-bottom: 10px;
         -webkit-transform: translateZ(0);
         transform: translateZ(0);
@@ -262,8 +269,12 @@ nav .nav-wrapper {
     .see-more {
         margin-top: 20px;
     }
-    .speech-name {
-        text-align: left;
+}
+
+
+@media only screen and (min-width: 1001px) {
+    .speech-list-img{
+        height: 600px;
     }
 }
 
@@ -286,7 +297,7 @@ nav .nav-wrapper {
         font-size: 28px;
     }
     .speech-list-img {
-        height: 450px;
+        height: 650px;
     }
     .btn.home {
         margin-right: 4%;
@@ -299,6 +310,11 @@ nav .nav-wrapper {
 }
 
 .speech-list-text h6 {
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.speech-list-text h7 {
     color: #fff;
     text-shadow: 2px 2px 4px #000000;
 }
@@ -605,8 +621,8 @@ nav ul a:hover {
 }
 
 .circle {
-  width: 100px;
-  height: 100px;
+  /*width: 100px;
+  height: 100px;*/
   border-radius: 50%;
   border-style: solid;
   border-color: red;
