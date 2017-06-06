@@ -206,11 +206,15 @@ nav .nav-wrapper {
     .home-banner {
         position: absolute;
         z-index: 2;
-        bottom: 120px;
+        /* bottom: 120px; */
+        bottom: 0;
+        margin-bottom: 120px;
         width: 100%;
     }
     .home-banner.face {
-        bottom: 55px;
+        /* bottom: 55px; */
+        bottom: 0;
+        margin-bottom: 55px; 
     }
     h3 {
         font-size: 2.92rem;
