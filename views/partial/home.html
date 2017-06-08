@@ -1,6 +1,6 @@
 <div class="slider speech-img">
   <ul class="slides" id="slider">
-    <% homeImg.forEach(function(c) {%>
+    <% homelist.forEach(function(c) {%>
       <li>
         <img src="<%=c.url%>" class="cover-filter">
       </li>
@@ -13,3 +13,42 @@
     政大三十大講堂由國立政治大學1981年畢業校友，在2011年的一次相聚中發想 而成立，我們以堅實的組織持續推動這項計畫。2012年至今，我們已邀請姚明 、嚴長壽、宋鴻兵、彭佳慧、尹衍樑、柯文哲、李開復，及林奕華等在國際間 有傑出作為、富有盛名的優秀人士，走進校園，以其在各領域的成就，勉勵並 帶領政大學子以多元的角度思考。
   </p>
 </div>
+<div class="container" style="margin-bottom:30px;">
+  <h5 class="speech-name">相關影片</h5>
+  <div class="video-container-wrap">
+    <% homeTube.forEach(function(x) {%>
+      <div class="video-container speech">
+        <iframe src="https://www.youtube.com/embed/<%=x[0]%>" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <% } )%>
+  </div>
+</div>
+<div class="container" style="margin-bottom:30px;">
+  <h5 class="speech-name">照片回顧</h5>
+  <div id="gallery">
+    <% homeWallImg.forEach(function(i) {%>
+      <a class="photos" href="<%=i%>"> <img src="/thumbnails<%=i%>"> </a>
+      <% }) %>
+  </div>
+</div>
+<div style="padding: 20px;"></div>  
+<script>
+var photos = $(".photos");
+if ($(window).width() < 600) {
+  photos = photos.slice(0, 10);
+}
+if (photos.length > 30) {
+  photos = photos.slice(0, 30);
+}
+$("#gallery").html($(photos));
+$('#gallery')
+  .justifiedGallery({
+    lastRow: 'hide',
+    rowHeight: 100,
+    rel: 'gallery2',
+    margins: 1,
+  })
+  .on('jg.complete', function() {
+    $('#gallery a').swipebox();
+  });
+</script>
