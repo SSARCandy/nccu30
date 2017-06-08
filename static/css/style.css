@@ -118,16 +118,13 @@ nav .nav-wrapper {
     margin-right: auto;
 }
 
+.home-calltoaction{
+    bottom: 110px;
+    position: relative;
+    z-index: 99;
+}
+
 @media only screen and (min-width: 101px) {
-    .home-banner {
-        position: absolute;
-        z-index: 2;
-        bottom: 54px;
-        width: 100%;
-    }
-    .home-banner.face {
-        bottom: 0%;
-    }
     .slider .slides li .caption {
         top: 0%;
         left: 5%;
@@ -203,19 +200,19 @@ nav .nav-wrapper {
     }
 }
 @media only screen and (min-width: 601px) {
-    .home-banner {
-        position: absolute;
-        z-index: 2;
-        /* bottom: 120px; */
-        bottom: 0;
-        margin-bottom: 120px;
-        width: 100%;
+    .home-calltoaction {
+        width: 300px;
+        bottom: 150px;
+        float: right;
+        position: relative;
+        z-index: 99;
     }
-    .home-banner.face {
-        /* bottom: 55px; */
-        bottom: 0;
-        margin-bottom: 55px; 
+ 
+    .home-action_btn {
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
+ 
     h3 {
         font-size: 2.92rem;
     }
@@ -283,12 +280,6 @@ nav .nav-wrapper {
 }
 
 @media only screen and (min-width: 1401px) {
-    .home-banner {
-        position: absolute;
-        z-index: 2;
-        bottom: 15%;
-        width: 100%;
-    }
     .slider .slides li .caption {
         top: 33%;
         left: 8%;
