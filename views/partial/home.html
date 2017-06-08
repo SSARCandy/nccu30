@@ -2,7 +2,7 @@
   <ul class="slides" id="slider">
     <% homelist.forEach(function(c) {%>
       <li>
-        <img src="<%=c.url%>" class="cover-filter">
+        <img src="<%=c%>" class="cover-filter">
       </li>
       <%})%>
   </ul>
@@ -18,7 +18,7 @@
   <div class="video-container-wrap">
     <% homeTube.forEach(function(x) {%>
       <div class="video-container speech">
-        <iframe src="https://www.youtube.com/embed/<%=x[0]%>" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/<%=x%>" frameborder="0" allowfullscreen></iframe>
       </div>
       <% } )%>
   </div>

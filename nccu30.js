@@ -30,33 +30,30 @@ app.use(compress({
   flush: require('zlib').Z_SYNC_FLUSH
 }));
 
+router.get('/home', function* () {
+  const template = fs.readFileSync(__dirname + '/views/index.html', 'utf-8');
+  const coverPhotos = fs.readdirSync(__dirname + config.homeimgUrl).map(f => `/images/home/${f}`).filter((f) => ~f.indexOf('slide'));
+  let homeTube = _.flatten(speechlist.map((s) => s.details.youtube));
+  let homeWallImg = _.flatten(speechlist.map((_, idx) => getFileList(`${__dirname}${config.galleryUrl}${idx+1}`, idx+1)));
+  
+  shuffle(homeWallImg.filter((f) => !~f.indexOf('cover')));
+  shuffle(homeTube);
+
+  this.body = ejs.render(template, {
+    filename: __dirname + '/views/index.html',
+    hideNewSpeech: config.hideNewSpeech,
+    tab: 'home',
+    newSpeech: newSpeech,
+    homelist: coverPhotos,
+    homeTube: homeTube.slice(0, 2),
+    homeWallImg: homeWallImg.slice(0, 30),
+    partialUrl: 'partial/home.html'
+  });
+});
+
 router.get('/:tab', function*() {
   const template = fs.readFileSync(__dirname + '/views/index.html', 'utf-8');
   const tab = this.params.tab;
-  var homeTube = [];
-  var homeWallImg = [];
-  var imgs = [];
-  if (tab === 'home') {
-    var range = [];
-    for (var i = 0; i < 9; i++) {
-      if (i === 8 || i === 6)
-        continue;
-      range.push(i);
-    }
-    shuffle(range);
-    var randomNumber = range.slice(0, 2);
-    for (var i = 0; i < 2; i++) {
-      homeTube.push(homelist[randomNumber[i]].youtube);
-    }
-
-    for (var i = 1; i < 9; i++) {
-      imgs = getFileList(__dirname + config.galleryUrl + i, i);
-      homeWallImg = homeWallImg.concat(imgs);
-    }
-    shuffle(homeWallImg);
-    homeWallImg = homeWallImg.slice(0, 20);
-    homeWallImg = homeWallImg.filter((homeWallImg) => !~homeWallImg.indexOf('cover'));
-  }
 
   this.body = ejs.render(template, {
     filename: __dirname + '/views/index.html',
@@ -64,9 +61,6 @@ router.get('/:tab', function*() {
     tab: tab,
     speechlist: speechlist,
     newSpeech: newSpeech,
-    homelist: homelist,
-    homeTube: homeTube,
-    homeWallImg: homeWallImg,
     partialUrl: 'partial/' + tab + '.html'
   });
 });
@@ -89,7 +83,7 @@ router.get('/speech/:speech/youtube', function*() {
 });
 
 router.get('/speech/:speech', function*() {
-  var imgs = getFileList(__dirname + config.galleryUrl + this.params.speech, this.params.speech);
+  let imgs = getFileList(__dirname + config.galleryUrl + this.params.speech, this.params.speech);
   const covers = imgs.filter((img) => ~img.indexOf('cover'));
   const template = fs.readFileSync(__dirname + '/views/index.html', 'utf-8');
   const speechDetails = speechlist[parseInt(this.params.speech, 10) - 1];
@@ -122,7 +116,7 @@ app.listen(process.env.PORT || 3210, function() {
 });
 
 function getFileList(dir, num) {
-  var results = [];
+  let results = [];
 
   fs.readdirSync(dir).forEach(function(file) {
     results.push(`/images/gallery/${num}/${file}`);
@@ -131,7 +125,7 @@ function getFileList(dir, num) {
 }
 
 function shuffle(a) {
-  var j, x, i;
+  let j, x, i;
   for (i = a.length; i; i -= 1) {
     j = Math.floor(Math.random() * i);
     x = a[i - 1];
