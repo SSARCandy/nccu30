@@ -14,6 +14,7 @@ const http       = require('http');
 const speechlist = require('./data/speechlist.js');
 const newSpeech  = require('./data/newestSpeech.js');
 const config     = require('./config/config.js');
+const homeImg    = require('./data/home.js')
 
 
 // logger
@@ -39,6 +40,7 @@ router.get('/:tab', function* () {
     tab: tab,
     speechlist: speechlist,
     newSpeech: newSpeech,
+    homeImg : homeImg,
     partialUrl: 'partial/' + tab + '.html'
   });
 });
