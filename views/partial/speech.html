@@ -21,7 +21,10 @@
     <% speechDetails.details.aboutSpeecher.forEach(function(s) {  %>
       <div class="row container" style="padding: 30px 0;">
         <div style="text-align:center">
-          <h5 class="speech-name"><%=s.title%></h5>
+          <h5 class="speech-name">
+            <span class="speech-badge">講者</span>
+            <%=s.title%>
+          </h5>
         </div>
         <div class="col s12 l4 center-align speech-avatar">
           <img src="<%=s.head%>" class="circle responsive-img" style="border:2px solid #BDBDBD;">
@@ -39,7 +42,10 @@
     <% speechDetails.details.aboutHoster.forEach(function(s) {  %>
       <div class="row container" style="padding: 30px 0;">
         <div style="text-align:center">
-          <h5 class="speech-name"><%=s.title%></h5>
+          <h5 class="speech-name">
+            <span class="speech-badge">主持人</span>
+            <%=s.title%>
+          </h5>
         </div>
         <div class="col s12 l4 center-align speech-avatar">
           <img src="<%=s.head%>" class="circle responsive-img" style="border:2px solid #BDBDBD;">

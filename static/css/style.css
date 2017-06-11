@@ -655,3 +655,10 @@ nav ul a:hover {
   background: black;
   z-index: -1;
 }
+
+
+.speech-badge {
+    background: #aaa;
+    border-radius: 5px;
+    padding: 3px;
+}
