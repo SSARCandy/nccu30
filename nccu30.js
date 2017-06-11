@@ -14,7 +14,6 @@ const http = require('http');
 const speechlist = require('./data/speechlist.js');
 const newSpeech = require('./data/newestSpeech.js');
 const config = require('./config/config.js');
-const homelist = require('./data/home.js')
 
 
 // logger
