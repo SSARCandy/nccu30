@@ -48,7 +48,6 @@ router.get('/home', function* () {
     hideNewSpeech: config.hideNewSpeech,
     tab: 'home',
     newSpeech: newSpeech,
-    // homelist: coverPhotos,
     homelist: homelist,
     homeTube: homeTube.slice(0, 2),
     homeWallImg: homeWallImg.slice(0, 30),

@@ -2,8 +2,8 @@
   <ul class="slides" id="slider">
     <% homelist.forEach(function(c) {%>
       <li>
-        <img src="<%=c.image%>" style="width:60%;">
-        <div class="home-div <%=c.float%>" style="background-color: <%=c.bgColor%>">
+        <img src="<%=c.image%>" style="width:100%; background-position: <%=c.bgPos%>;">
+        <div class="home-div" style="background-color: <%=c.bgColor%>; opacity: 0.9; <%=c.float%>:0;">
           <h5 style="color: <%=c.textColor%>"><%=c.name%></h5>
           <h6 style="color: <%=c.textColor%>"><%=c.dialog%></h6>
           <br>

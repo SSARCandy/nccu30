@@ -124,14 +124,28 @@ nav .nav-wrapper {
     z-index: 99;
 }
 
-.home-div {
-    width: 40%;
-    height: 100%;
-    align-items: center;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+@media only screen and (min-width: 991px) {
+    .home-div {
+        width: 40%;
+        height: 100%;
+        align-items: center;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+    }
+}
+@media only screen and (max-width: 990px) {
+    .home-div {
+        position: absolute;
+        bottom: 0px;
+        width: 100vw;
+        text-align: center;
+        padding: 20px;
+    }
 }
 
 @media only screen and (min-width: 101px) {
@@ -210,6 +224,7 @@ nav .nav-wrapper {
 }
 
 @media only screen and (min-width: 601px) {
+
     .home-calltoaction {
         width: 300px;
         bottom: 150px;
