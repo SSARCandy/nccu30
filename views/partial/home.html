@@ -2,7 +2,13 @@
   <ul class="slides" id="slider">
     <% homelist.forEach(function(c) {%>
       <li>
-        <img src="<%=c%>" class="cover-filter">
+        <img src="<%=c.image%>" style="width:60%;">
+        <div class="home-div <%=c.float%>" style="background-color: <%=c.bgColor%>">
+          <h5 style="color: <%=c.textColor%>"><%=c.name%></h5>
+          <h6 style="color: <%=c.textColor%>"><%=c.dialog%></h6>
+          <br>
+          <h6 style="color: <%=c.textColor%>"><%=c.footer%></h6>
+        </div>
       </li>
       <%})%>
   </ul>
@@ -31,7 +37,7 @@
       <% }) %>
   </div>
 </div>
-<div style="padding: 20px;"></div>  
+<div style="padding: 20px;"></div>
 <script>
 var photos = $(".photos");
 if ($(window).width() < 600) {

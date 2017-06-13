@@ -13,6 +13,7 @@ const http = require('http');
 
 const speechlist = require('./data/speechlist.js');
 const newSpeech = require('./data/newestSpeech.js');
+const homelist = require('./data/home.js');
 const config = require('./config/config.js');
 
 
@@ -38,12 +39,17 @@ router.get('/home', function* () {
   shuffle(homeWallImg.filter((f) => !~f.indexOf('cover')));
   shuffle(homeTube);
 
+  homelist.forEach((item, i)=>{
+    item.image = coverPhotos[i];
+  });
+
   this.body = ejs.render(template, {
     filename: __dirname + '/views/index.html',
     hideNewSpeech: config.hideNewSpeech,
     tab: 'home',
     newSpeech: newSpeech,
-    homelist: coverPhotos,
+    // homelist: coverPhotos,
+    homelist: homelist,
     homeTube: homeTube.slice(0, 2),
     homeWallImg: homeWallImg.slice(0, 30),
     partialUrl: 'partial/home.html'
