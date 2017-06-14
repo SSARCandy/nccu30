@@ -44,7 +44,7 @@ module.exports = [{
     footer: '— 柯文哲 2015.5.26',
     float: 'left',
     bgColor: '#5D4037',
-    textColor: '#000000',
+    textColor: '#FFFFFF',
     bgPos: 'right'
 }, {
     name: '李開復談世界觀',
