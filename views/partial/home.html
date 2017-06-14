@@ -1,24 +1,26 @@
 <div class="slider speech-img">
-  <ul class="slides" id="slider">
+  <ul class="slides speech-img" id="slider">
     <% homelist.forEach(function(c) {%>
       <li>
         <img src="<%=c.image%>" style="width:100%; background-position: <%=c.bgPos%>;">
         <div class="home-div" style="background-color: <%=c.bgColor%>; opacity: 0.9; <%=c.float%>:0;">
           <h5 style="color: <%=c.textColor%>"><%=c.name%></h5>
           <p style="color: <%=c.textColor%>"><%=c.dialog%></h6>
+          <h6 class="right-align" style="color: <%=c.textColor%>"><%=c.footer%></h6>
           <br>
-          <p class="right-align" style="color: <%=c.textColor%>"><%=c.footer%></h6>
         </div>
       </li>
-      <%})%>
+    <%})%>
   </ul>
 </div>
+
 <div class="container left-align about-container" style="padding: 30px 0;">
   <h4 class="center-align">三十大介紹</h4>
   <p>
     政大三十大講堂由國立政治大學1981年畢業校友，在2011年的一次相聚中發想 而成立，我們以堅實的組織持續推動這項計畫。2012年至今，我們已邀請姚明 、嚴長壽、宋鴻兵、彭佳慧、尹衍樑、柯文哲、李開復，及林奕華等在國際間 有傑出作為、富有盛名的優秀人士，走進校園，以其在各領域的成就，勉勵並 帶領政大學子以多元的角度思考。
   </p>
 </div>
+
 <div class="container" style="margin-bottom:30px;">
   <h5 class="speech-name">相關影片</h5>
   <div class="video-container-wrap">
@@ -29,6 +31,7 @@
       <% } )%>
   </div>
 </div>
+
 <div class="container" style="margin-bottom:30px;">
   <h5 class="speech-name">照片回顧</h5>
   <div id="gallery">
@@ -38,6 +41,7 @@
   </div>
 </div>
 <div style="padding: 20px;"></div>
+
 <script>
 var photos = $(".photos");
 if ($(window).width() < 600) {
