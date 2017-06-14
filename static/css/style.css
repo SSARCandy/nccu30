@@ -215,6 +215,9 @@ nav .nav-wrapper {
         border-radius: 8px;
         margin-top: 10px;
     }
+    .sponsor-container {
+        margin: 10px auto;
+    }
 }
 
 @media only screen and (min-width: 426px) {
@@ -292,6 +295,9 @@ nav .nav-wrapper {
     }
     .see-more {
         margin-top: 20px;
+    }
+    .sponsor-container{
+        margin: 10px 0;
     }
 }
 
