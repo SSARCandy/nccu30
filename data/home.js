@@ -5,7 +5,7 @@ module.exports = [{
     float: 'left',
     bgColor: '#ECEFF1',
     textColor: '#000000',
-    bgPos: 'right'
+    bgPos: '70%'
 }, {
     name: '為土地種一個希望',
     dialog: '「學會自我療養自己，也要學會做別人生命中的天使。」',
@@ -13,7 +13,7 @@ module.exports = [{
     float: 'left',
     bgColor: '#000000',
     textColor: '#FFFFFF',
-    bgPos: 'right'
+    bgPos: '80%'
 }, {
     name: '貨幣戰爭',
     dialog: '「人性是貪婪的。在人類發展歷史中，科學技術可以進化，物質文明可以進化，但是人性，永遠不會進化。」',
@@ -21,7 +21,7 @@ module.exports = [{
     float: 'right',
     bgColor: '#A1887F',
     textColor: '#000000',
-    bgPos: 'left'
+    bgPos: '30%'
 }, {
     name: '我是歌手的心路歷程',
     dialog: '「保持最單純初衷，這樣才能唱到老。」',
@@ -37,7 +37,7 @@ module.exports = [{
     float: 'right',
     bgColor: '#000000',
     textColor: '#FFFFFF',
-    bgPos: 'left'
+    bgPos: '20%'
 }, {
     name: '改變，從台北開始',
     dialog: '「我期盼的是，建立一個可以用常識理解的國家。」',
@@ -45,7 +45,7 @@ module.exports = [{
     float: 'left',
     bgColor: '#5D4037',
     textColor: '#FFFFFF',
-    bgPos: 'right'
+    bgPos: '70%'
 }, {
     name: '李開復談世界觀',
     dialog: '「找你喜愛的事去做吧！每個人都要發掘無法被電腦取代的才能。」',
@@ -53,7 +53,7 @@ module.exports = [{
     float: 'right',
     bgColor: '#CFD8DC',
     textColor: '#000000',
-    bgPos: 'center'
+    bgPos: '35%'
 }, {
     name: '預見與遇見',
     dialog: '「生活如果就是戲劇，每個時刻都在跟我們產生對話，我們不是旁觀者，而是身在這個情境中去尋找的人。這個尋找就是過程。」',
@@ -61,5 +61,5 @@ module.exports = [{
     float: 'left',
     bgColor: '#000000',
     textColor: '#FFFFFF',
-    bgPos: 'left'
+    bgPos: 'center'
 }];

@@ -144,7 +144,7 @@ nav .nav-wrapper {
         bottom: 0px;
         width: 100vw;
         text-align: center;
-        padding: 20px;
+        padding: 15px;
     }
 }
 
@@ -178,7 +178,7 @@ nav .nav-wrapper {
         -webkit-align-items: flex-start;
     }
     .speech-img {
-        height: 92vh !important;
+        height: calc(100vh - 64px) !important;
     }
     .center-sm {
         text-align: center;
@@ -268,7 +268,7 @@ nav .nav-wrapper {
         -webkit-align-items: flex-start;
     }
     .speech-img {
-        height: 92vh !important;
+        height: calc(100vh - 64px) !important;
     }
     .center-sm {
         text-align: left;
