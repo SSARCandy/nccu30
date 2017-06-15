@@ -146,6 +146,9 @@ nav .nav-wrapper {
         text-align: center;
         padding: 15px;
     }
+    .address-font {
+        font-size: 16px;
+    }
 }
 
 @media only screen and (min-width: 101px) {
