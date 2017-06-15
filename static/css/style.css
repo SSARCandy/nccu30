@@ -113,7 +113,7 @@ nav .nav-wrapper {
 }
 
 .speech-list-img {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -169,7 +169,7 @@ nav .nav-wrapper {
     }
     .speech-list-img {
         height: 200px;
-        margin-bottom: 6px;
+        margin-bottom: 1px;
     }
     .speech-list-text {
         height: 100%;
@@ -260,13 +260,13 @@ nav .nav-wrapper {
     }
     .speech-list-img {
         height: 500px;
-        margin-bottom: 10px;
+        margin-bottom: 2px;
         -webkit-transform: translateZ(0);
         transform: translateZ(0);
     }
     .speech-list-text {
         width: 100%;
-        padding: 150px 0 0 20px;
+        padding: 150px 0 0 36px;
         align-items: flex-start;
         -webkit-align-items: flex-start;
     }
