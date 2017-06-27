@@ -660,6 +660,8 @@ nav ul a:hover {
     content: '';
     position: absolute;
     transform: translate(37px, 57px)rotate(60deg);
+    -webkit-transform: translate(37px, 57px)rotate(60deg);
+    -ms-tranform: translate(37px, 57px)rotate(60deg);
     width: 9em;
     height: .2em;
     background: black;
@@ -670,6 +672,8 @@ nav ul a:hover {
     content: '';
     position: absolute;
     transform: translate(39px, -59px)rotate(-60deg);
+    -webkit-transform: translate(39px, -59px)rotate(-60deg);
+    -ms-transform: translate(39px, -59px)rotate(-60deg);
     width: 9em;
     height: .2em;
     background: black;
@@ -680,6 +684,8 @@ nav ul a:hover {
     content: '';
     position: absolute;
     transform: translate(-71px, 0px);
+    -webkit-transform: translate(-71px, 0px);
+    -ms-transform: translate(-71px, 0px);
     width: 9em;
     height: .2em;
     background: black;
