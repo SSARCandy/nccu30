@@ -36,7 +36,7 @@ router.get('/home', function* () {
   let homeTube = _.flatten(speechlist.map((s) => s.details.youtube));
   let homeWallImg = _.flatten(speechlist.map((_, idx) => getFileList(`${__dirname}${config.galleryUrl}${idx+1}`, idx+1)));
   
-  shuffle(homeWallImg.filter((f) => !~f.indexOf('cover')));
+  shuffle(homeWallImg);
   shuffle(homeTube);
 
   homelist.forEach((item, i)=>{
@@ -50,7 +50,7 @@ router.get('/home', function* () {
     newSpeech: newSpeech,
     homelist: homelist,
     homeTube: homeTube.slice(0, 2),
-    homeWallImg: homeWallImg.slice(0, 30),
+    homeWallImg: homeWallImg.filter((f) => !~f.indexOf('cover')).slice(0, 30),
     partialUrl: 'partial/home.html'
   });
 });
