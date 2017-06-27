@@ -1,11 +1,21 @@
 <div id="body">
-  <div class="parallax-container speech-list-img" style="max-width: none;">
-    <div class="parallax"><img class="responsive-img dark-filter" src="<%=covers[0]%>"></div>
-    <div class="valign-wrapper speech-list-text">
-      <h5 class="valign"><%=speechDetails.name%></h5>
-      <h6 class="valign"><%=speechDetails.details.slogan%></h6>
-    </div>
+  <div class="slider speech-img">
+    <ul class="slides" id="slider">
+      <% covers.forEach(function(c) {%>
+        <li>
+          <img src="<%=c%>" class="cover-filter">
+          <div class="caption speech left-align fixed-text">
+            <h3><%=speechDetails.name%></h3>
+            <!--<h5 class="flow-text light grey-text text-lighten-3"><%=speechDetails.details.slogan%></h5>-->
+            <h5 class="flow-text light grey-text text-lighten-3"><%=speechDetails.speecher%> X <%=speechDetails.hoster%></h5>
+            <h6><%=speechDetails.date%></h6>
+            <h6><%=speechDetails.place%></h6>
+          </div>
+        </li>
+        <%})%>
+    </ul>
   </div>
+  
   <div class="container">
     <h5 style="margin:0; padding: 15px 0;">現場轉播</h5>
     <% if (speechDetails.details.youtube.length === 0) {%>暫無現場轉播資料，敬請期待！<%}%>
