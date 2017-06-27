@@ -81,7 +81,7 @@ router.get('/speech/:speech/youtube', function*() {
     filename: __dirname + '/views/index.html',
     newSpeech: null,
     speechDetails: speechDetails,
-    tab: 'speech',
+    tab: 'live',
     partialUrl: 'partial/speechvideolist.html'
   });
 });
