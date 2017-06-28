@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node nccu30.js",
     "dev": "nodemon nccu30.js",
+    "postcss": "node ./node_modules/postcss-cli/index.js -c ./config/postcss.config.js static/css/*.css -d static/css/dst/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -21,5 +22,10 @@
     "koa-static": "^1.5.2",
     "lodash": "^3.10.1",
     "quickthumb": "0.0.12"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "cssnano": "^3.10.0",
+    "postcss-cli": "^4.1.0"
   }
 }
