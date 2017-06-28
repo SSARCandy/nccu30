@@ -19,13 +19,16 @@
 
     <!--speecher intro-->
     <% speechDetails.details.aboutSpeecher.forEach(function(s) {  %>
-      <div class="row container" style="padding: 30px 0;">
-        <div style="text-align:center">
-          <h5 class="speech-name">
-            <span class="speech-badge">主講人</span>
-            <%=s.title%>
-          </h5>
+    <div>
+      <div class="row container" style="padding-bottom: 10px; padding-top:20px;">
+        <div class="col l4 s12" style="text-align: center;">
+          <h5><span class="speech-name speech-badge">主講人</span></h5>
         </div>
+        <div class="col l8 s12" style="text-align: center;">
+          <h5 class="speech-name"><%=s.title%></h5>
+        </div>
+      </div>
+      <div class="row container">
         <div class="col s12 l4 center-align speech-avatar">
           <img src="<%=s.head%>" class="circle responsive-img" style="border:2px solid #BDBDBD;">
         </div>
@@ -36,17 +39,21 @@
               <%})%>
         </div>
       </div>
+    </div>
     <%})%>
 
     <!--hoster intro-->
     <% speechDetails.details.aboutHoster.forEach(function(s) {  %>
-      <div class="row container" style="padding: 30px 0;">
-        <div style="text-align:center">
-          <h5 class="speech-name">
-            <span class="speech-badge">主持人</span>
-            <%=s.title%>
-          </h5>
+    <div>
+      <div class="row container" style="padding-bottom: 10px; padding-top:20px;">
+        <div class="col l4 s12" style="text-align: center;">
+          <h5><span class="speech-name speech-badge">主講人</span></h5>
         </div>
+        <div class="col l8 s12" style="text-align: center;">
+          <h5 class="speech-name"><%=s.title%></h5>
+        </div>
+      </div>
+      <div class="row container">
         <div class="col s12 l4 center-align speech-avatar">
           <img src="<%=s.head%>" class="circle responsive-img" style="border:2px solid #BDBDBD;">
         </div>
@@ -57,6 +64,7 @@
               <%})%>
         </div>
       </div>
+    </div>
     <%})%>
 
   </div>
