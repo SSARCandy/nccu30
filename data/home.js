@@ -61,5 +61,5 @@ module.exports = [{
     float: 'left',
     bgColor: '#000000',
     textColor: '#FFFFFF',
-    bgPos: 'center'
+    bgPos: 'right'
 }];
