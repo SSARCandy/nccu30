@@ -699,3 +699,9 @@ nav ul a:hover {
     border-radius: 5px;
     padding: 3px;
 }
+
+@media only screen and (max-width: 420px) {
+    .home-dialog {
+        display: none;
+    }
+}
