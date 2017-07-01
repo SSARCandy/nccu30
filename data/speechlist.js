@@ -233,7 +233,7 @@ module.exports = [{
         youtube: []
     }
 }, {
-    name: '預見與遇見',
+    name: '預見與遇見—用創作與未來對話',
     speecher: '林奕華',
     hoster: '楊欣芳',
     date: '2016.05.10',
